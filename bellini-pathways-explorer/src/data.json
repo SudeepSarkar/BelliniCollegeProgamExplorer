@@ -71,6 +71,7 @@
           "Career planning",
           "Advising support"
         ],
+        "background": "All backgrounds welcome. Use this overview to connect with advising and pick the right starting point.",
         "visionTags": [
           "Custom Pathways",
           "Advising Support",
@@ -129,11 +130,16 @@
           "Working with data & patterns"
         ],
         "foundations": [
-          "Foundational: Algebra & Geometry",
           "Intermediate: Pre-Calculus / Trigonometry",
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
+        "background": "Best for students ready for advanced coursework and an accelerated pathway.",
+        "background": "CS core with anthropology context; expects readiness in programming and problem solving.",
+        "background": "CS core with business context; expects readiness in programming and problem solving.",
+        "background": "Strong foundation in programming, algorithms, mathematics, and computer systems.",
+        "background": "Strong foundation in mathematics, physics, programming, and engineering.",
+        "background": "Strong interest in programming, software design, algorithms, and computer systems.",
         "preferences": [
           "BS"
         ],
@@ -225,6 +231,10 @@
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
+        "background": "Most students enter with CS or CE preparation; a pathway certificate is available for non-computing backgrounds.",
+        "background": "CS core with criminology focus; expects readiness in programming and problem solving.",
+        "background": "Covers programming, databases, networks, and statistics for secure systems.",
+        "background": "Blend of programming, algorithms, and engineering systems.",
         "preferences": [
           "BS"
         ],
@@ -287,6 +297,8 @@
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
+        "background": "Graduate study blending software, engineering, and systems foundations.",
+        "background": "CS core with social science context; expects readiness in programming and problem solving.",
         "preferences": [
           "BS"
         ],
@@ -323,6 +335,8 @@
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
+        "background": "Advanced study for students with strong hardware, systems, and programming background.",
+        "background": "CS core with economics context; expects readiness in programming and quantitative analysis.",
         "preferences": [
           "BS"
         ],
@@ -371,10 +385,13 @@
           "Protecting systems & data"
         ],
         "foundations": [
+          "Foundational: Algebra & Geometry",
           "Intermediate: Pre-Calculus / Trigonometry",
           "Advanced: AP Calculus or higher",
+          "New to coding",
           "Some coding background"
         ],
+        "background": "Designed for students without a CS/CE background; includes foundational CS and AI coursework.",
         "preferences": [
           "BS"
         ],
@@ -426,9 +443,11 @@
         "foundations": [
           "Foundational: Algebra & Geometry",
           "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
           "New to coding",
           "Some coding background"
         ],
+        "background": "Focuses on programming, databases, networking, and system administration.",
         "preferences": [
           "BS"
         ],
@@ -481,6 +500,7 @@
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
+        "background": "Graduate cybersecurity for students with computing and systems foundations.",
         "preferences": [
           "BS"
         ],
@@ -677,6 +697,9 @@
           "New to coding",
           "Some coding background"
         ],
+        "background": "Graduate certificate for learners building AI skills; helpful to have some programming exposure.",
+        "background": "For students adding IT fundamentals alongside another major.",
+        "background": "For students adding CS fundamentals alongside another major.",
         "preferences": [
           "Minor"
         ],
@@ -717,9 +740,11 @@
         "foundations": [
           "Foundational: Algebra & Geometry",
           "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
           "New to coding",
           "Some coding background"
         ],
+        "background": "Designed for students without a computing background who need CS foundations.",
         "preferences": [
           "Minor"
         ],
@@ -742,6 +767,7 @@
           "Advising",
           "Research"
         ],
+        "background": "Best for students ready for advanced coursework and an accelerated pathway.",
         "visions": [
           "The Software Architect (CS, CSE)",
           "The AI Pioneer (BSAI, MSAI)"
@@ -1039,6 +1065,8 @@
           "Intermediate: Pre-Calculus / Trigonometry",
           "Some coding background"
         ],
+        "background": "Research-intensive program for students strong in math, data systems, and programming.",
+        "background": "Research-ready preparation with strong math, systems, and programming foundations.",
         "preferences": [
           "PhD"
         ],
@@ -1114,9 +1142,11 @@
         "foundations": [
           "Foundational: Algebra & Geometry",
           "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
           "New to coding",
           "Some coding background"
         ],
+        "background": "No technical background required; open to learners from any discipline.",
         "preferences": [
           "Certificate"
         ],
@@ -1157,9 +1187,11 @@
         "foundations": [
           "Foundational: Algebra & Geometry",
           "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
           "New to coding",
           "Some coding background"
         ],
+        "background": "Open to learners at all levels; no prior AI experience required.",
         "preferences": [
           "Certificate"
         ],
@@ -1197,9 +1229,11 @@
         "foundations": [
           "Foundational: Algebra & Geometry",
           "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
           "New to coding",
           "Some coding background"
         ],
+        "background": "Open to anyone; designed for learners of all levels to build practical GenAI skills.",
         "preferences": [
           "Certificate"
         ],

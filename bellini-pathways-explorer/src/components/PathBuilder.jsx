@@ -148,6 +148,9 @@ function ProgramCard({ program, selected, recommended, onSelect }) {
             {program.data.skills.slice(0, 4).join(" • ")}
           </div>
         )}
+        {program.data.background && (
+          <div className="mt-2 text-xs text-slate-600">{program.data.background}</div>
+        )}
         {program.data.tags?.length > 0 && (
           <div className="mt-2 flex flex-wrap gap-2">
             {program.data.tags.map((tag) => (
