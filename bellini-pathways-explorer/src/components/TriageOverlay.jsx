@@ -2,44 +2,76 @@ import { motion } from "framer-motion";
 
 const visionOptions = [
   {
-    id: "The Architect (CS/CSE)",
-    label: "The Architect",
-    description: "Build apps and platforms millions use; solve complex puzzles with code.",
+    categoryId: "The Software Architect (CS, CSE)",
+    categoryLabel: "Category A: The Software Architect (CS, CSE)",
+    statements: [
+      "I want to build systems so robust they can handle a billion users at once.",
+      "I want to use advanced algorithms to solve global challenges like optimizing energy grids or mapping genomes.",
+      "I want to write the complex code behind seamless experiences like instant global communication or real-time digital worlds.",
+    ],
   },
   {
-    id: "The Designer (CpE/CSE)",
-    label: "The Designer",
-    description: "Design hardware and circuits; build smart connected devices.",
+    categoryId: "The Systems Engineer (CpE, CSE)",
+    categoryLabel: "Category B: The Systems Engineer (CpE, CSE)",
+    statements: [
+      "I want to forge the circuit-level intelligence and physical hardware inside the next world-changing device.",
+      "I want to build \"smart\" infrastructure that allows every physical object to communicate over the internet.",
+      "I want to engineer autonomous machines that can navigate the world and make decisions without a human pilot.",
+    ],
   },
   {
-    id: "The Expert (IT)",
-    label: "The Expert",
-    description: "Manage networks and cloud infrastructure for large organizations.",
+    categoryId: "The Infrastructure Specialist (BSIT)",
+    categoryLabel: "Category C: The Infrastructure Specialist (BSIT)",
+    statements: [
+      "I want to build and manage the high-speed networks that power the daily operations of an entire smart city.",
+      "I want to control the massive cloud server environments that keep global platforms like Netflix or Google online.",
+      "I want to lead the elite technical team that detects and fixes massive system outages before they affect the public.",
+    ],
   },
   {
-    id: "The Guardian (CyS)",
-    label: "The Guardian",
-    description: "Create secure systems; act as a friendly hacker to find holes.",
+    categoryId: "The Cyber Guardian (BSCYS)",
+    categoryLabel: "Category D: The Cyber Guardian (BSCYS)",
+    statements: [
+      "I want to develop unhackable security protocols that keep the private data of millions of people safe from any threat.",
+      "I want to infiltrate systems as a \"friendly hacker\" to identify and patch vulnerabilities before criminals can find them.",
+      "I want to hunt down international cyber-syndicates by tracking digital fingerprints across the global web.",
+    ],
   },
   {
-    id: "The Pioneer (AI)",
-    label: "The Pioneer",
-    description: "Build AI that predicts and learns; create next-gen chatbots.",
+    categoryId: "The AI Pioneer (BSAI, MSAI)",
+    categoryLabel: "Category E: The AI Pioneer (BSAI, MSAI)",
+    statements: [
+      "I want to build AI models that can predict the future—from stock market shifts to breakthroughs in medical cures.",
+      "I want to grant machines the human-like ability to see, hear, and reason through massive amounts of information.",
+      "I want to create synthetic minds that can hold natural, logical conversations with the nuance of a human.",
+    ],
   },
   {
-    id: "The Investigator (CS+Criminology)",
-    label: "The Investigator",
-    description: "Find digital evidence and study cybercriminal behavior.",
+    categoryId: "The Digital Investigator (CS + Criminology)",
+    categoryLabel: "Category F: The Digital Investigator (CS + Criminology)",
+    statements: [
+      "I want to extract hidden evidence from encrypted devices to solve high-stakes, real-world criminal cases.",
+      "I want to study the behavioral patterns of cybercriminals to predict and stop their next move.",
+      "I want to be the technical authority in the legal fight against identity theft and global financial fraud.",
+    ],
   },
   {
-    id: "The Leader (CS+Business)",
-    label: "The Leader",
-    description: "Launch a startup; lead teams building the future.",
+    categoryId: "The Tech Business Leader (CS + Business)",
+    categoryLabel: "Category G: The Tech Business Leader (CS + Business)",
+    statements: [
+      "I want to launch my own tech startup and transform a single prototype into a billion-dollar global company.",
+      "I want to use data and algorithms to revolutionize how the world handles money and international banking.",
+      "I want to lead a legion of engineers to design and ship the tech products that will define the next decade.",
+    ],
   },
   {
-    id: "The Ethicist (CS+Social Sciences)",
-    label: "The Ethicist",
-    description: "Make AI fair and advise on privacy and policy.",
+    categoryId: "The Universal Technologist (CS + Social Science)",
+    categoryLabel: "Category H: The Universal Technologist (CS + Social Science)",
+    statements: [
+      "I want to ensure the logic behind AI is built on a bedrock of transparency, reliability, and human values.",
+      "I want to design technology that adapts to the needs of every society and culture across the world.",
+      "I want to protect the fundamental right to privacy by advising world leaders on the digital boundaries of the future.",
+    ],
   },
 ];
 
@@ -103,7 +135,7 @@ function buildSteps(startingLine, credentialType) {
 export default function TriageOverlay({ triage, setTriage, onComplete }) {
   const steps = buildSteps(triage.startingLine, triage.credentialType);
   const isComplete =
-    triage.visions.length === 3 &&
+    triage.statementSelections.length === 3 &&
     steps.every((step) => triage[step.key]);
 
   return (
@@ -127,34 +159,54 @@ export default function TriageOverlay({ triage, setTriage, onComplete }) {
           Pick your top three “I want” statements. Then we’ll map your vision to an achievable pathway.
         </p>
 
-        <div className="mt-6 grid gap-4 md:grid-cols-2">
-          {visionOptions.map((vision) => {
-            const active = triage.visions.includes(vision.id);
-            const disabled = !active && triage.visions.length >= 3;
-            return (
-              <button
-                key={vision.id}
-                className={`rounded-2xl border p-4 text-left transition ${
-                  active
-                    ? "border-usf-green bg-usf-mist"
-                    : "border-slate-200 hover:border-usf-green"
-                } ${disabled ? "opacity-50 cursor-not-allowed" : ""}`}
-                onClick={() => {
-                  if (disabled) return;
-                  setTriage((prev) => {
-                    const exists = prev.visions.includes(vision.id);
-                    const next = exists
-                      ? prev.visions.filter((item) => item !== vision.id)
-                      : [...prev.visions, vision.id];
-                    return { ...prev, visions: next };
-                  });
-                }}
-              >
-                <div className="font-semibold text-slate-800">{vision.label}</div>
-                <div className="mt-2 text-sm text-slate-600">{vision.description}</div>
-              </button>
-            );
-          })}
+        <div className="mt-6 space-y-6">
+          {visionOptions.map((category) => (
+            <div key={category.categoryId}>
+              <div className="text-sm font-semibold text-slate-700">{category.categoryLabel}</div>
+              <div className="mt-3 grid gap-3 md:grid-cols-2">
+                {category.statements.map((statement) => {
+                  const active = triage.statementSelections.includes(statement);
+                  const disabled = !active && triage.statementSelections.length >= 3;
+                  return (
+                    <button
+                      key={statement}
+                      className={`rounded-2xl border p-4 text-left transition ${
+                        active
+                          ? "border-usf-green bg-usf-mist"
+                          : "border-slate-200 hover:border-usf-green"
+                      } ${disabled ? "opacity-50 cursor-not-allowed" : ""}`}
+                      onClick={() => {
+                        if (disabled) return;
+                        setTriage((prev) => {
+                          const exists = prev.statementSelections.includes(statement);
+                          const nextStatements = exists
+                            ? prev.statementSelections.filter((item) => item !== statement)
+                            : [...prev.statementSelections, statement];
+                          const nextVisions = Array.from(
+                            new Set(
+                              visionOptions
+                                .flatMap((cat) =>
+                                  cat.statements
+                                    .filter((item) => nextStatements.includes(item))
+                                    .map(() => cat.categoryId)
+                                )
+                            )
+                          );
+                          return {
+                            ...prev,
+                            statementSelections: nextStatements,
+                            visions: nextVisions,
+                          };
+                        });
+                      }}
+                    >
+                      <div className="text-sm text-slate-700">{statement}</div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
         </div>
 
         <div className="mt-8 rounded-3xl border border-slate-200 bg-white p-6">
@@ -211,7 +263,7 @@ export default function TriageOverlay({ triage, setTriage, onComplete }) {
 
         <div className="mt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4 sticky bottom-0 bg-white/95 py-4">
           <p className="text-xs text-slate-500">
-            Choose exactly three vision statements. You can edit these later using the “Edit Triage” button.
+            Choose exactly three statements. You can edit these later using the “Edit Triage” button.
           </p>
           <button
             className={`px-6 py-3 rounded-full text-white font-semibold transition ${

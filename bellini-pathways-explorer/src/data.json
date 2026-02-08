@@ -5,59 +5,95 @@
       "type": "inputNode",
       "data": {
         "label": "High school or first-year",
-        "startingPoint": ["High school or first-year"],
+        "startingPoint": [
+          "High school or first-year"
+        ],
         "kind": "input"
       },
-      "position": { "x": 0, "y": 60 }
+      "position": {
+        "x": 0,
+        "y": 60
+      }
     },
     {
       "id": "current_usf",
       "type": "inputNode",
       "data": {
         "label": "Current USF student",
-        "startingPoint": ["Current USF student"],
+        "startingPoint": [
+          "Current USF student"
+        ],
         "kind": "input"
       },
-      "position": { "x": 0, "y": 180 }
+      "position": {
+        "x": 0,
+        "y": 180
+      }
     },
     {
       "id": "transfer",
       "type": "inputNode",
       "data": {
         "label": "Transfer student",
-        "startingPoint": ["Transfer student"],
+        "startingPoint": [
+          "Transfer student"
+        ],
         "kind": "input"
       },
-      "position": { "x": 0, "y": 300 }
+      "position": {
+        "x": 0,
+        "y": 300
+      }
     },
     {
       "id": "working_pro",
       "type": "inputNode",
       "data": {
         "label": "Working professional / career switcher",
-        "startingPoint": ["Working professional / career switcher"],
+        "startingPoint": [
+          "Working professional / career switcher"
+        ],
         "kind": "input"
       },
-      "position": { "x": 0, "y": 420 }
+      "position": {
+        "x": 0,
+        "y": 420
+      }
     },
-
     {
       "id": "bscs",
       "type": "degreeNode",
       "data": {
         "label": "Computer Science, BSCS",
         "kind": "undergraduate",
-        "skills": ["Programming", "Algorithms", "Systems"],
-        "visions": ["The Architect (CS/CSE)", "The Pioneer (AI)", "The Guardian (CyS)"],
-        "visionTags": ["The Architect", "The Pioneer", "The Guardian"],
-        "interests": ["Building software & apps", "Working with data & patterns"],
+        "skills": [
+          "Programming",
+          "Algorithms",
+          "Systems"
+        ],
+        "visions": [
+          "The Software Architect (CS, CSE)",
+          "The AI Pioneer (BSAI, MSAI)",
+          "The Cyber Guardian (BSCYS)"
+        ],
+        "visionTags": [
+          "The Software Architect",
+          "The AI Pioneer",
+          "The Cyber Guardian"
+        ],
+        "interests": [
+          "Building software & apps",
+          "Working with data & patterns"
+        ],
         "foundations": [
           "Foundational: Algebra & Geometry",
           "Intermediate: Pre-Calculus / Trigonometry",
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
-        "preferences": ["BS"],
+        "preferences": [
+          "BS"
+        ],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscs.aspx",
         "jobs": [
           {
@@ -66,7 +102,10 @@
             "salary": "Median national salary $103,135",
             "source": "USF BSCS career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscs.aspx",
-            "goals": ["Industry", "Public Sector"]
+            "goals": [
+              "Industry",
+              "Public Sector"
+            ]
           },
           {
             "title": "Cybersecurity Analyst",
@@ -74,7 +113,10 @@
             "salary": "Median national salary $103,135",
             "source": "USF BSCS career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscs.aspx",
-            "goals": ["Industry", "Public Sector"]
+            "goals": [
+              "Industry",
+              "Public Sector"
+            ]
           },
           {
             "title": "Data Scientist",
@@ -82,7 +124,10 @@
             "salary": "Median national salary $103,135",
             "source": "USF BSCS career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscs.aspx",
-            "goals": ["Industry", "Public Sector"]
+            "goals": [
+              "Industry",
+              "Public Sector"
+            ]
           },
           {
             "title": "Systems Architect",
@@ -90,7 +135,9 @@
             "salary": "Median national salary $103,135",
             "source": "USF BSCS career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscs.aspx",
-            "goals": ["Industry"]
+            "goals": [
+              "Industry"
+            ]
           },
           {
             "title": "Research Scientist",
@@ -98,11 +145,17 @@
             "salary": "Median national salary $103,135",
             "source": "USF BSCS career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscs.aspx",
-            "goals": ["Academia", "Public Sector"]
+            "goals": [
+              "Academia",
+              "Public Sector"
+            ]
           }
         ]
       },
-      "position": { "x": 260, "y": 20 }
+      "position": {
+        "x": 260,
+        "y": 20
+      }
     },
     {
       "id": "bscp",
@@ -110,16 +163,28 @@
       "data": {
         "label": "Computer Engineering, BSCP",
         "kind": "undergraduate",
-        "skills": ["Hardware", "Embedded Systems", "Design"],
-        "visions": ["The Designer (CpE/CSE)"],
-        "visionTags": ["The Designer"],
-        "interests": ["Hardware & devices"],
+        "skills": [
+          "Hardware",
+          "Embedded Systems",
+          "Design"
+        ],
+        "visions": [
+          "The Systems Engineer (CpE, CSE)"
+        ],
+        "visionTags": [
+          "The Systems Engineer"
+        ],
+        "interests": [
+          "Hardware & devices"
+        ],
         "foundations": [
           "Intermediate: Pre-Calculus / Trigonometry",
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
-        "preferences": ["BS"],
+        "preferences": [
+          "BS"
+        ],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscp.aspx",
         "jobs": [
           {
@@ -128,7 +193,10 @@
             "salary": "Median national salary $155,020",
             "source": "USF BSCP career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscp.aspx",
-            "goals": ["Industry", "Public Sector"]
+            "goals": [
+              "Industry",
+              "Public Sector"
+            ]
           },
           {
             "title": "Embedded Software Engineer",
@@ -136,11 +204,17 @@
             "salary": "Median national salary $155,020",
             "source": "USF BSCP career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscp.aspx",
-            "goals": ["Industry", "Public Sector"]
+            "goals": [
+              "Industry",
+              "Public Sector"
+            ]
           }
         ]
       },
-      "position": { "x": 260, "y": 120 }
+      "position": {
+        "x": 260,
+        "y": 120
+      }
     },
     {
       "id": "bscse",
@@ -148,19 +222,37 @@
       "data": {
         "label": "Computer Science & Engineering, BSCSE (Starting Fall 2026)",
         "kind": "undergraduate",
-        "skills": ["Software", "Systems", "Engineering"],
-        "visions": ["The Architect (CS/CSE)", "The Designer (CpE/CSE)"],
-        "visionTags": ["The Architect", "The Designer"],
-        "interests": ["Building software & apps", "Hardware & devices"],
+        "skills": [
+          "Software",
+          "Systems",
+          "Engineering"
+        ],
+        "visions": [
+          "The Software Architect (CS, CSE)",
+          "The Systems Engineer (CpE, CSE)"
+        ],
+        "visionTags": [
+          "The Software Architect",
+          "The Systems Engineer"
+        ],
+        "interests": [
+          "Building software & apps",
+          "Hardware & devices"
+        ],
         "foundations": [
           "Intermediate: Pre-Calculus / Trigonometry",
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
-        "preferences": ["BS"],
+        "preferences": [
+          "BS"
+        ],
         "isNew": true
       },
-      "position": { "x": 260, "y": 220 }
+      "position": {
+        "x": 260,
+        "y": 220
+      }
     },
     {
       "id": "bsai",
@@ -168,16 +260,29 @@
       "data": {
         "label": "Artificial Intelligence, BSAI",
         "kind": "undergraduate",
-        "skills": ["ML", "NLP", "Ethics"],
-        "visions": ["The Pioneer (AI)"],
-        "visionTags": ["The Pioneer"],
-        "interests": ["Making computers learn", "Working with data & patterns"],
+        "skills": [
+          "ML",
+          "NLP",
+          "Ethics"
+        ],
+        "visions": [
+          "The AI Pioneer (BSAI, MSAI)"
+        ],
+        "visionTags": [
+          "The AI Pioneer"
+        ],
+        "interests": [
+          "Making computers learn",
+          "Working with data & patterns"
+        ],
         "foundations": [
           "Intermediate: Pre-Calculus / Trigonometry",
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
-        "preferences": ["BS"],
+        "preferences": [
+          "BS"
+        ],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bsai.aspx",
         "jobs": [
           {
@@ -186,11 +291,17 @@
             "salary": "Median salary in AI fields $156,998",
             "source": "USF BSAI career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bsai.aspx",
-            "goals": ["Industry", "Public Sector"]
+            "goals": [
+              "Industry",
+              "Public Sector"
+            ]
           }
         ]
       },
-      "position": { "x": 260, "y": 320 }
+      "position": {
+        "x": 260,
+        "y": 320
+      }
     },
     {
       "id": "bscys",
@@ -198,16 +309,30 @@
       "data": {
         "label": "Cybersecurity, BSCYS",
         "kind": "undergraduate",
-        "skills": ["Security", "Networks", "Forensics"],
-        "visions": ["The Guardian (CyS)", "The Investigator (CS+Criminology)"],
-        "visionTags": ["The Guardian", "The Investigator"],
-        "interests": ["Protecting systems & data"],
+        "skills": [
+          "Security",
+          "Networks",
+          "Forensics"
+        ],
+        "visions": [
+          "The Cyber Guardian (BSCYS)",
+          "The Digital Investigator (CS + Criminology)"
+        ],
+        "visionTags": [
+          "The Cyber Guardian",
+          "The Digital Investigator"
+        ],
+        "interests": [
+          "Protecting systems & data"
+        ],
         "foundations": [
           "Intermediate: Pre-Calculus / Trigonometry",
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
-        "preferences": ["BS"],
+        "preferences": [
+          "BS"
+        ],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscys.aspx",
         "jobs": [
           {
@@ -216,11 +341,17 @@
             "salary": "Median national salary $124,910",
             "source": "USF BSCYS career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscys.aspx",
-            "goals": ["Industry", "Public Sector"]
+            "goals": [
+              "Industry",
+              "Public Sector"
+            ]
           }
         ]
       },
-      "position": { "x": 260, "y": 420 }
+      "position": {
+        "x": 260,
+        "y": 420
+      }
     },
     {
       "id": "bsit",
@@ -228,17 +359,32 @@
       "data": {
         "label": "Information Technology, BSIT",
         "kind": "undergraduate",
-        "skills": ["IT Ops", "Cloud", "Support"],
-        "visions": ["The Expert (IT)", "The Guardian (CyS)"],
-        "visionTags": ["The Expert", "The Guardian"],
-        "interests": ["Building software & apps", "Protecting systems & data"],
+        "skills": [
+          "IT Ops",
+          "Cloud",
+          "Support"
+        ],
+        "visions": [
+          "The Infrastructure Specialist (BSIT)",
+          "The Cyber Guardian (BSCYS)"
+        ],
+        "visionTags": [
+          "The Infrastructure Specialist",
+          "The Cyber Guardian"
+        ],
+        "interests": [
+          "Building software & apps",
+          "Protecting systems & data"
+        ],
         "foundations": [
           "Foundational: Algebra & Geometry",
           "Intermediate: Pre-Calculus / Trigonometry",
           "New to coding",
           "Some coding background"
         ],
-        "preferences": ["BS"],
+        "preferences": [
+          "BS"
+        ],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bsit.aspx",
         "jobs": [
           {
@@ -247,33 +393,55 @@
             "salary": "Median salary for computer & IT occupations $105,993; information security analyst avg $124,910",
             "source": "USF BSIT career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bsit.aspx",
-            "goals": ["Industry", "Public Sector"]
+            "goals": [
+              "Industry",
+              "Public Sector"
+            ]
           }
         ]
       },
-      "position": { "x": 260, "y": 520 }
+      "position": {
+        "x": 260,
+        "y": 520
+      }
     },
-
     {
       "id": "bscs_business",
       "type": "degreeNode",
       "data": {
         "label": "BSCS + Business, BS",
         "kind": "interdisciplinary",
-        "skills": ["CS", "Business", "Analytics"],
-        "visions": ["The Leader (CS+Business)", "The Architect (CS/CSE)"],
-        "visionTags": ["The Leader", "The Architect"],
-        "interests": ["Tech + society/business"],
+        "skills": [
+          "CS",
+          "Business",
+          "Analytics"
+        ],
+        "visions": [
+          "The Tech Business Leader (CS + Business)",
+          "The Software Architect (CS, CSE)"
+        ],
+        "visionTags": [
+          "The Tech Business Leader",
+          "The Software Architect"
+        ],
+        "interests": [
+          "Tech + society/business"
+        ],
         "foundations": [
           "Intermediate: Pre-Calculus / Trigonometry",
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
-        "preferences": ["BS"],
+        "preferences": [
+          "BS"
+        ],
         "interdisciplinary": true,
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/cs-and-business.aspx"
       },
-      "position": { "x": 520, "y": 40 }
+      "position": {
+        "x": 520,
+        "y": 40
+      }
     },
     {
       "id": "bscs_crim",
@@ -281,20 +449,38 @@
       "data": {
         "label": "BSCS + Criminology, BS",
         "kind": "interdisciplinary",
-        "skills": ["CS", "Law", "Forensics"],
-        "visions": ["The Investigator (CS+Criminology)", "The Guardian (CyS)"],
-        "visionTags": ["The Investigator", "The Guardian"],
-        "interests": ["Tech + society/business", "Protecting systems & data"],
+        "skills": [
+          "CS",
+          "Law",
+          "Forensics"
+        ],
+        "visions": [
+          "The Digital Investigator (CS + Criminology)",
+          "The Cyber Guardian (BSCYS)"
+        ],
+        "visionTags": [
+          "The Digital Investigator",
+          "The Cyber Guardian"
+        ],
+        "interests": [
+          "Tech + society/business",
+          "Protecting systems & data"
+        ],
         "foundations": [
           "Intermediate: Pre-Calculus / Trigonometry",
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
-        "preferences": ["BS"],
+        "preferences": [
+          "BS"
+        ],
         "interdisciplinary": true,
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/cs-and-criminology.aspx"
       },
-      "position": { "x": 520, "y": 140 }
+      "position": {
+        "x": 520,
+        "y": 140
+      }
     },
     {
       "id": "bscs_iss",
@@ -302,20 +488,37 @@
       "data": {
         "label": "BSCS + Interdisciplinary Social Sciences, BS",
         "kind": "interdisciplinary",
-        "skills": ["CS", "Social Science", "Policy"],
-        "visions": ["The Ethicist (CS+Social Sciences)", "The Leader (CS+Business)"],
-        "visionTags": ["The Ethicist", "The Leader"],
-        "interests": ["Tech + society/business"],
+        "skills": [
+          "CS",
+          "Social Science",
+          "Policy"
+        ],
+        "visions": [
+          "The Universal Technologist (CS + Social Science)",
+          "The Tech Business Leader (CS + Business)"
+        ],
+        "visionTags": [
+          "The Universal Technologist",
+          "The Tech Business Leader"
+        ],
+        "interests": [
+          "Tech + society/business"
+        ],
         "foundations": [
           "Intermediate: Pre-Calculus / Trigonometry",
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
-        "preferences": ["BS"],
+        "preferences": [
+          "BS"
+        ],
         "interdisciplinary": true,
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/cs-and-social-sciences.aspx"
       },
-      "position": { "x": 520, "y": 240 }
+      "position": {
+        "x": 520,
+        "y": 240
+      }
     },
     {
       "id": "bscs_econ",
@@ -323,20 +526,38 @@
       "data": {
         "label": "BSCS + Economics (Est. Fall 2027)",
         "kind": "interdisciplinary",
-        "skills": ["CS", "Economics", "Data"],
-        "visions": ["The Leader (CS+Business)", "The Architect (CS/CSE)"],
-        "visionTags": ["The Leader", "The Architect"],
-        "interests": ["Tech + society/business", "Working with data & patterns"],
+        "skills": [
+          "CS",
+          "Economics",
+          "Data"
+        ],
+        "visions": [
+          "The Tech Business Leader (CS + Business)",
+          "The Software Architect (CS, CSE)"
+        ],
+        "visionTags": [
+          "The Tech Business Leader",
+          "The Software Architect"
+        ],
+        "interests": [
+          "Tech + society/business",
+          "Working with data & patterns"
+        ],
         "foundations": [
           "Intermediate: Pre-Calculus / Trigonometry",
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
-        "preferences": ["BS"],
+        "preferences": [
+          "BS"
+        ],
         "interdisciplinary": true,
         "isNew": true
       },
-      "position": { "x": 520, "y": 340 }
+      "position": {
+        "x": 520,
+        "y": 340
+      }
     },
     {
       "id": "bscs_anth",
@@ -344,44 +565,79 @@
       "data": {
         "label": "BSCS + Anthropology (Est. Fall 2027)",
         "kind": "interdisciplinary",
-        "skills": ["CS", "Human Context", "Research"],
-        "visions": ["The Ethicist (CS+Social Sciences)", "The Architect (CS/CSE)"],
-        "visionTags": ["The Ethicist", "The Architect"],
-        "interests": ["Tech + society/business"],
+        "skills": [
+          "CS",
+          "Human Context",
+          "Research"
+        ],
+        "visions": [
+          "The Universal Technologist (CS + Social Science)",
+          "The Software Architect (CS, CSE)"
+        ],
+        "visionTags": [
+          "The Universal Technologist",
+          "The Software Architect"
+        ],
+        "interests": [
+          "Tech + society/business"
+        ],
         "foundations": [
           "Intermediate: Pre-Calculus / Trigonometry",
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
-        "preferences": ["BS"],
+        "preferences": [
+          "BS"
+        ],
         "interdisciplinary": true,
         "isNew": true
       },
-      "position": { "x": 520, "y": 440 }
+      "position": {
+        "x": 520,
+        "y": 440
+      }
     },
-
     {
       "id": "minor_cs",
       "type": "degreeNode",
       "data": {
         "label": "Minor: Computer Science",
         "kind": "minor",
-        "skills": ["CS Foundations", "Programming", "Problem Solving"],
-        "tags": ["15 credits"],
-        "visions": ["The Architect (CS/CSE)", "The Leader (CS+Business)"],
-        "visionTags": ["The Architect", "The Leader"],
-        "interests": ["Building software & apps"],
+        "skills": [
+          "CS Foundations",
+          "Programming",
+          "Problem Solving"
+        ],
+        "tags": [
+          "15 credits"
+        ],
+        "visions": [
+          "The Software Architect (CS, CSE)",
+          "The Tech Business Leader (CS + Business)"
+        ],
+        "visionTags": [
+          "The Software Architect",
+          "The Tech Business Leader"
+        ],
+        "interests": [
+          "Building software & apps"
+        ],
         "foundations": [
           "Foundational: Algebra & Geometry",
           "Intermediate: Pre-Calculus / Trigonometry",
           "New to coding",
           "Some coding background"
         ],
-        "preferences": ["Minor"],
+        "preferences": [
+          "Minor"
+        ],
         "interdisciplinary": true,
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/minors.aspx"
       },
-      "position": { "x": 520, "y": 560 }
+      "position": {
+        "x": 520,
+        "y": 560
+      }
     },
     {
       "id": "minor_it",
@@ -389,44 +645,81 @@
       "data": {
         "label": "Minor: Information Technology",
         "kind": "minor",
-        "skills": ["IT Basics", "Support", "Systems"],
-        "tags": ["21 credits"],
-        "visions": ["The Expert (IT)", "The Guardian (CyS)"],
-        "visionTags": ["The Expert", "The Guardian"],
-        "interests": ["Protecting systems & data", "Building software & apps"],
+        "skills": [
+          "IT Basics",
+          "Support",
+          "Systems"
+        ],
+        "tags": [
+          "21 credits"
+        ],
+        "visions": [
+          "The Infrastructure Specialist (BSIT)",
+          "The Cyber Guardian (BSCYS)"
+        ],
+        "visionTags": [
+          "The Infrastructure Specialist",
+          "The Cyber Guardian"
+        ],
+        "interests": [
+          "Protecting systems & data",
+          "Building software & apps"
+        ],
         "foundations": [
           "Foundational: Algebra & Geometry",
           "Intermediate: Pre-Calculus / Trigonometry",
           "New to coding",
           "Some coding background"
         ],
-        "preferences": ["Minor"],
+        "preferences": [
+          "Minor"
+        ],
         "interdisciplinary": true,
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/minors.aspx"
       },
-      "position": { "x": 520, "y": 660 }
+      "position": {
+        "x": 520,
+        "y": 660
+      }
     },
-
     {
       "id": "bs_ms",
       "type": "bridgeNode",
       "data": {
         "label": "BS/MS Pathways",
         "kind": "pathway",
-        "skills": ["Accelerated", "Advising", "Research"],
-        "visions": ["The Architect (CS/CSE)", "The Pioneer (AI)"],
-        "visionTags": ["The Architect", "The Pioneer"],
-        "interests": ["Building software & apps", "Working with data & patterns"],
+        "skills": [
+          "Accelerated",
+          "Advising",
+          "Research"
+        ],
+        "visions": [
+          "The Software Architect (CS, CSE)",
+          "The AI Pioneer (BSAI, MSAI)"
+        ],
+        "visionTags": [
+          "The Software Architect",
+          "The AI Pioneer"
+        ],
+        "interests": [
+          "Building software & apps",
+          "Working with data & patterns"
+        ],
         "foundations": [
           "Intermediate: Pre-Calculus / Trigonometry",
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
-        "preferences": ["MS"],
+        "preferences": [
+          "MS"
+        ],
         "interdisciplinary": true,
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/pathways-program.aspx"
       },
-      "position": { "x": 760, "y": 20 }
+      "position": {
+        "x": 760,
+        "y": 20
+      }
     },
     {
       "id": "mscs",
@@ -434,16 +727,33 @@
       "data": {
         "label": "Computer Science, MSCS",
         "kind": "graduate",
-        "skills": ["Advanced CS", "Research", "Systems"],
-        "visions": ["The Architect (CS/CSE)", "The Pioneer (AI)", "The Guardian (CyS)"],
-        "visionTags": ["The Architect", "The Pioneer", "The Guardian"],
-        "interests": ["Building software & apps", "Working with data & patterns"],
+        "skills": [
+          "Advanced CS",
+          "Research",
+          "Systems"
+        ],
+        "visions": [
+          "The Software Architect (CS, CSE)",
+          "The AI Pioneer (BSAI, MSAI)",
+          "The Cyber Guardian (BSCYS)"
+        ],
+        "visionTags": [
+          "The Software Architect",
+          "The AI Pioneer",
+          "The Cyber Guardian"
+        ],
+        "interests": [
+          "Building software & apps",
+          "Working with data & patterns"
+        ],
         "foundations": [
           "Intermediate: Pre-Calculus / Trigonometry",
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
-        "preferences": ["MS"],
+        "preferences": [
+          "MS"
+        ],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/mscs.aspx",
         "jobs": [
           {
@@ -452,11 +762,17 @@
             "salary": "Median national salary $103,135",
             "source": "USF MSCS career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/mscs.aspx",
-            "goals": ["Industry", "Public Sector"]
+            "goals": [
+              "Industry",
+              "Public Sector"
+            ]
           }
         ]
       },
-      "position": { "x": 760, "y": 120 }
+      "position": {
+        "x": 760,
+        "y": 120
+      }
     },
     {
       "id": "mscse",
@@ -464,19 +780,37 @@
       "data": {
         "label": "Computer Science & Engineering, MSCSE (Starting Fall 2026)",
         "kind": "graduate",
-        "skills": ["Software", "Engineering", "Systems"],
-        "visions": ["The Architect (CS/CSE)", "The Designer (CpE/CSE)"],
-        "visionTags": ["The Architect", "The Designer"],
-        "interests": ["Building software & apps", "Hardware & devices"],
+        "skills": [
+          "Software",
+          "Engineering",
+          "Systems"
+        ],
+        "visions": [
+          "The Software Architect (CS, CSE)",
+          "The Systems Engineer (CpE, CSE)"
+        ],
+        "visionTags": [
+          "The Software Architect",
+          "The Systems Engineer"
+        ],
+        "interests": [
+          "Building software & apps",
+          "Hardware & devices"
+        ],
         "foundations": [
           "Intermediate: Pre-Calculus / Trigonometry",
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
-        "preferences": ["MS"],
+        "preferences": [
+          "MS"
+        ],
         "isNew": true
       },
-      "position": { "x": 760, "y": 220 }
+      "position": {
+        "x": 760,
+        "y": 220
+      }
     },
     {
       "id": "mscpe",
@@ -484,16 +818,28 @@
       "data": {
         "label": "Computer Engineering, MSCpE",
         "kind": "graduate",
-        "skills": ["Hardware", "Systems", "Design"],
-        "visions": ["The Designer (CpE/CSE)"],
-        "visionTags": ["The Designer"],
-        "interests": ["Hardware & devices"],
+        "skills": [
+          "Hardware",
+          "Systems",
+          "Design"
+        ],
+        "visions": [
+          "The Systems Engineer (CpE, CSE)"
+        ],
+        "visionTags": [
+          "The Systems Engineer"
+        ],
+        "interests": [
+          "Hardware & devices"
+        ],
         "foundations": [
           "Intermediate: Pre-Calculus / Trigonometry",
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
-        "preferences": ["MS"],
+        "preferences": [
+          "MS"
+        ],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/mscpe.aspx",
         "jobs": [
           {
@@ -502,11 +848,17 @@
             "salary": "Median national salary $136,752",
             "source": "USF MSCpE career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/mscpe.aspx",
-            "goals": ["Industry", "Public Sector"]
+            "goals": [
+              "Industry",
+              "Public Sector"
+            ]
           }
         ]
       },
-      "position": { "x": 760, "y": 320 }
+      "position": {
+        "x": 760,
+        "y": 320
+      }
     },
     {
       "id": "msai",
@@ -514,16 +866,31 @@
       "data": {
         "label": "Artificial Intelligence, MSAI",
         "kind": "graduate",
-        "skills": ["Deep Learning", "NLP", "Responsible AI"],
-        "visions": ["The Pioneer (AI)", "The Ethicist (CS+Social Sciences)"],
-        "visionTags": ["The Pioneer", "The Ethicist"],
-        "interests": ["Making computers learn", "Working with data & patterns"],
+        "skills": [
+          "Deep Learning",
+          "NLP",
+          "Responsible AI"
+        ],
+        "visions": [
+          "The AI Pioneer (BSAI, MSAI)",
+          "The Universal Technologist (CS + Social Science)"
+        ],
+        "visionTags": [
+          "The AI Pioneer",
+          "The Universal Technologist"
+        ],
+        "interests": [
+          "Making computers learn",
+          "Working with data & patterns"
+        ],
         "foundations": [
           "Intermediate: Pre-Calculus / Trigonometry",
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
-        "preferences": ["MS"],
+        "preferences": [
+          "MS"
+        ],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/msai.aspx",
         "jobs": [
           {
@@ -532,11 +899,17 @@
             "salary": "Median salary $140,910; AI fields median $156,998",
             "source": "USF MSAI career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/msai.aspx",
-            "goals": ["Industry", "Public Sector"]
+            "goals": [
+              "Industry",
+              "Public Sector"
+            ]
           }
         ]
       },
-      "position": { "x": 760, "y": 420 }
+      "position": {
+        "x": 760,
+        "y": 420
+      }
     },
     {
       "id": "mscy",
@@ -544,16 +917,30 @@
       "data": {
         "label": "Cybersecurity, MS",
         "kind": "graduate",
-        "skills": ["Threats", "Cloud", "Policy"],
-        "visions": ["The Guardian (CyS)", "The Investigator (CS+Criminology)"],
-        "visionTags": ["The Guardian", "The Investigator"],
-        "interests": ["Protecting systems & data"],
+        "skills": [
+          "Threats",
+          "Cloud",
+          "Policy"
+        ],
+        "visions": [
+          "The Cyber Guardian (BSCYS)",
+          "The Digital Investigator (CS + Criminology)"
+        ],
+        "visionTags": [
+          "The Cyber Guardian",
+          "The Digital Investigator"
+        ],
+        "interests": [
+          "Protecting systems & data"
+        ],
         "foundations": [
           "Intermediate: Pre-Calculus / Trigonometry",
           "Advanced: AP Calculus or higher",
           "Some coding background"
         ],
-        "preferences": ["MS"],
+        "preferences": [
+          "MS"
+        ],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/mscys.aspx",
         "jobs": [
           {
@@ -562,11 +949,17 @@
             "salary": "Average advertised salary $118,482; Florida average $102,896",
             "source": "USF MSCyS career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/mscys.aspx",
-            "goals": ["Industry", "Public Sector"]
+            "goals": [
+              "Industry",
+              "Public Sector"
+            ]
           }
         ]
       },
-      "position": { "x": 760, "y": 520 }
+      "position": {
+        "x": 760,
+        "y": 520
+      }
     },
     {
       "id": "phd_cse",
@@ -574,20 +967,39 @@
       "data": {
         "label": "Computer Science and Engineering, PhD",
         "kind": "graduate",
-        "skills": ["Research", "Teaching", "Publication"],
-        "visions": ["The Architect (CS/CSE)", "The Designer (CpE/CSE)"],
-        "visionTags": ["The Architect", "The Designer"],
-        "interests": ["Building software & apps", "Working with data & patterns", "Hardware & devices"],
+        "skills": [
+          "Research",
+          "Teaching",
+          "Publication"
+        ],
+        "visions": [
+          "The Software Architect (CS, CSE)",
+          "The Systems Engineer (CpE, CSE)"
+        ],
+        "visionTags": [
+          "The Software Architect",
+          "The Systems Engineer"
+        ],
+        "interests": [
+          "Building software & apps",
+          "Working with data & patterns",
+          "Hardware & devices"
+        ],
         "foundations": [
           "Advanced: AP Calculus or higher",
           "Intermediate: Pre-Calculus / Trigonometry",
           "Some coding background"
         ],
-        "preferences": ["PhD"],
+        "preferences": [
+          "PhD"
+        ],
         "interdisciplinary": true,
         "url": "https://usf.to/PhD-Computer-Science-and-Engineering"
       },
-      "position": { "x": 760, "y": 620 }
+      "position": {
+        "x": 760,
+        "y": 620
+      }
     },
     {
       "id": "phd_bda",
@@ -595,41 +1007,76 @@
       "data": {
         "label": "Big Data Analytics, PhD",
         "kind": "graduate",
-        "skills": ["Analytics", "Research", "Data Systems"],
-        "visions": ["The Pioneer (AI)", "The Architect (CS/CSE)"],
-        "visionTags": ["The Pioneer", "The Architect"],
-        "interests": ["Working with data & patterns", "Making computers learn"],
+        "skills": [
+          "Analytics",
+          "Research",
+          "Data Systems"
+        ],
+        "visions": [
+          "The AI Pioneer (BSAI, MSAI)",
+          "The Software Architect (CS, CSE)"
+        ],
+        "visionTags": [
+          "The AI Pioneer",
+          "The Software Architect"
+        ],
+        "interests": [
+          "Working with data & patterns",
+          "Making computers learn"
+        ],
         "foundations": [
           "Advanced: AP Calculus or higher",
           "Intermediate: Pre-Calculus / Trigonometry",
           "Some coding background"
         ],
-        "preferences": ["PhD"],
+        "preferences": [
+          "PhD"
+        ],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/phd-data-analytics/"
       },
-      "position": { "x": 760, "y": 720 }
+      "position": {
+        "x": 760,
+        "y": 720
+      }
     },
-
     {
       "id": "cert_ai",
       "type": "degreeNode",
       "data": {
         "label": "Artificial Intelligence (Graduate Certificate)",
         "kind": "grad certificate",
-        "skills": ["AI", "Applied ML", "Ethics"],
-        "visions": ["The Pioneer (AI)", "The Ethicist (CS+Social Sciences)"],
-        "visionTags": ["The Pioneer", "The Ethicist"],
-        "interests": ["Making computers learn", "Working with data & patterns"],
+        "skills": [
+          "AI",
+          "Applied ML",
+          "Ethics"
+        ],
+        "visions": [
+          "The AI Pioneer (BSAI, MSAI)",
+          "The Universal Technologist (CS + Social Science)"
+        ],
+        "visionTags": [
+          "The AI Pioneer",
+          "The Universal Technologist"
+        ],
+        "interests": [
+          "Making computers learn",
+          "Working with data & patterns"
+        ],
         "foundations": [
           "Foundational: Algebra & Geometry",
           "Intermediate: Pre-Calculus / Trigonometry",
           "New to coding",
           "Some coding background"
         ],
-        "preferences": ["Certificate"],
+        "preferences": [
+          "Certificate"
+        ],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate-certificates/ai/"
       },
-      "position": { "x": 760, "y": 840 }
+      "position": {
+        "x": 760,
+        "y": 840
+      }
     },
     {
       "id": "cert_pathway",
@@ -637,22 +1084,41 @@
       "data": {
         "label": "Pathway to Computing (Graduate Certificate)",
         "kind": "grad certificate",
-        "skills": ["CS Foundations", "Preparation", "Bridge"],
-        "visions": ["The Architect (CS/CSE)", "The Expert (IT)"],
-        "visionTags": ["The Architect", "The Expert"],
-        "tags": ["For non-computing majors"],
-        "interests": ["Building software & apps"],
+        "skills": [
+          "CS Foundations",
+          "Preparation",
+          "Bridge"
+        ],
+        "visions": [
+          "The Software Architect (CS, CSE)",
+          "The Infrastructure Specialist (BSIT)"
+        ],
+        "visionTags": [
+          "The Software Architect",
+          "The Infrastructure Specialist"
+        ],
+        "tags": [
+          "For non-computing majors"
+        ],
+        "interests": [
+          "Building software & apps"
+        ],
         "foundations": [
           "Foundational: Algebra & Geometry",
           "Intermediate: Pre-Calculus / Trigonometry",
           "New to coding",
           "Some coding background"
         ],
-        "preferences": ["Certificate"],
+        "preferences": [
+          "Certificate"
+        ],
         "interdisciplinary": true,
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate-certificates/pathway-to-computing/"
       },
-      "position": { "x": 760, "y": 940 }
+      "position": {
+        "x": 760,
+        "y": 940
+      }
     },
     {
       "id": "cert_ai_everyday",
@@ -660,44 +1126,83 @@
       "data": {
         "label": "AI and Everyday Impact: Applied Practices Graduate Certificate",
         "kind": "grad certificate",
-        "skills": ["Applied AI", "Practice", "Impact"],
-        "visions": ["The Ethicist (CS+Social Sciences)", "The Pioneer (AI)"],
-        "visionTags": ["The Ethicist", "The Pioneer"],
-        "interests": ["Making computers learn", "Tech + society/business"],
+        "skills": [
+          "Applied AI",
+          "Practice",
+          "Impact"
+        ],
+        "visions": [
+          "The Universal Technologist (CS + Social Science)",
+          "The AI Pioneer (BSAI, MSAI)"
+        ],
+        "visionTags": [
+          "The Universal Technologist",
+          "The AI Pioneer"
+        ],
+        "interests": [
+          "Making computers learn",
+          "Tech + society/business"
+        ],
         "foundations": [
           "Foundational: Algebra & Geometry",
           "Intermediate: Pre-Calculus / Trigonometry",
           "New to coding",
           "Some coding background"
         ],
-        "preferences": ["Certificate"],
+        "preferences": [
+          "Certificate"
+        ],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate-certificates/ai-and-everyday-impact/"
       },
-      "position": { "x": 760, "y": 1040 }
+      "position": {
+        "x": 760,
+        "y": 1040
+      }
     },
-
     {
       "id": "micro_genai",
       "type": "degreeNode",
       "data": {
         "label": "GenAI in Action: Impact and Possibilities",
         "kind": "microcredential",
-        "skills": ["GenAI", "Use Cases", "Foundations"],
-        "tags": ["Online", "Non-credit", "Open to Public"],
-        "visions": ["The Pioneer (AI)", "The Ethicist (CS+Social Sciences)"],
-        "visionTags": ["The Pioneer", "The Ethicist"],
-        "interests": ["Making computers learn", "Working with data & patterns"],
+        "skills": [
+          "GenAI",
+          "Use Cases",
+          "Foundations"
+        ],
+        "tags": [
+          "Online",
+          "Non-credit",
+          "Open to Public"
+        ],
+        "visions": [
+          "The AI Pioneer (BSAI, MSAI)",
+          "The Universal Technologist (CS + Social Science)"
+        ],
+        "visionTags": [
+          "The AI Pioneer",
+          "The Universal Technologist"
+        ],
+        "interests": [
+          "Making computers learn",
+          "Working with data & patterns"
+        ],
         "foundations": [
           "Foundational: Algebra & Geometry",
           "Intermediate: Pre-Calculus / Trigonometry",
           "New to coding",
           "Some coding background"
         ],
-        "preferences": ["Microcredential"],
+        "preferences": [
+          "Microcredential"
+        ],
         "availableToAll": true,
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/micro-credentials/genai-in-action-impact-and-possibilities.aspx"
       },
-      "position": { "x": 760, "y": 1160 }
+      "position": {
+        "x": 760,
+        "y": 1160
+      }
     },
     {
       "id": "micro_whisperer",
@@ -705,24 +1210,44 @@
       "data": {
         "label": "AI Whisperer: A Microcourse in Crafting Prompts for Generative AI",
         "kind": "microcredential",
-        "skills": ["Prompting", "Tools", "Outputs"],
-        "tags": ["Online", "Non-credit", "Open to Public"],
-        "visions": ["The Pioneer (AI)", "The Ethicist (CS+Social Sciences)"],
-        "visionTags": ["The Pioneer", "The Ethicist"],
-        "interests": ["Making computers learn"],
+        "skills": [
+          "Prompting",
+          "Tools",
+          "Outputs"
+        ],
+        "tags": [
+          "Online",
+          "Non-credit",
+          "Open to Public"
+        ],
+        "visions": [
+          "The AI Pioneer (BSAI, MSAI)",
+          "The Universal Technologist (CS + Social Science)"
+        ],
+        "visionTags": [
+          "The AI Pioneer",
+          "The Universal Technologist"
+        ],
+        "interests": [
+          "Making computers learn"
+        ],
         "foundations": [
           "Foundational: Algebra & Geometry",
           "Intermediate: Pre-Calculus / Trigonometry",
           "New to coding",
           "Some coding background"
         ],
-        "preferences": ["Microcredential"],
+        "preferences": [
+          "Microcredential"
+        ],
         "availableToAll": true,
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/micro-credentials/ai-whisperer.aspx"
       },
-      "position": { "x": 760, "y": 1260 }
+      "position": {
+        "x": 760,
+        "y": 1260
+      }
     },
-
     {
       "id": "career_industry",
       "type": "careerNode",
@@ -730,17 +1255,22 @@
         "label": "Industry",
         "kind": "career",
         "infoSide": "left",
-        "goals": ["Industry"],
+        "goals": [
+          "Industry"
+        ],
         "jobsDetailed": [
           {
             "title": "Computer Programmer",
             "description": "Writes, modifies, and tests computer code or scripts.",
-            "salaryRange": "BLS May 2024 pay: 10th–90th percentile $52,190–$162,090"
+            "salaryRange": "BLS May 2024 pay: 10th\u201390th percentile $52,190\u2013$162,090"
           }
         ],
         "storyId": "alumni_industry"
       },
-      "position": { "x": 1100, "y": 180 }
+      "position": {
+        "x": 1100,
+        "y": 180
+      }
     },
     {
       "id": "career_research",
@@ -749,17 +1279,22 @@
         "label": "Public Sector",
         "kind": "career",
         "infoSide": "left",
-        "goals": ["Public Sector"],
+        "goals": [
+          "Public Sector"
+        ],
         "jobsDetailed": [
           {
             "title": "Computer and Information Research Scientist",
             "description": "Designs innovative uses for new and existing computing technology.",
-            "salaryRange": "BLS May 2024 pay: 10th–90th percentile $80,670–$232,120"
+            "salaryRange": "BLS May 2024 pay: 10th\u201390th percentile $80,670\u2013$232,120"
           }
         ],
         "storyId": "alumni_research"
       },
-      "position": { "x": 1100, "y": 320 }
+      "position": {
+        "x": 1100,
+        "y": 320
+      }
     },
     {
       "id": "career_academia",
@@ -768,78 +1303,285 @@
         "label": "Academia",
         "kind": "career",
         "infoSide": "left",
-        "goals": ["Academia"],
+        "goals": [
+          "Academia"
+        ],
         "jobsDetailed": [
           {
             "title": "Postsecondary Teacher",
             "description": "Instructs students in academic subjects beyond the high school level.",
-            "salaryRange": "BLS May 2024 pay: 10th–90th percentile $48,570–$199,520"
+            "salaryRange": "BLS May 2024 pay: 10th\u201390th percentile $48,570\u2013$199,520"
           }
         ],
         "storyId": "alumni_academia"
       },
-      "position": { "x": 1100, "y": 460 }
+      "position": {
+        "x": 1100,
+        "y": 460
+      }
     }
   ],
   "edges": [
-    { "id": "e-hs-bscs", "source": "hs_grad", "target": "bscs" },
-    { "id": "e-hs-bscp", "source": "hs_grad", "target": "bscp" },
-    { "id": "e-hs-bscse", "source": "hs_grad", "target": "bscse" },
-    { "id": "e-hs-bsai", "source": "hs_grad", "target": "bsai" },
-    { "id": "e-hs-bscys", "source": "hs_grad", "target": "bscys" },
-    { "id": "e-hs-bsit", "source": "hs_grad", "target": "bsit" },
-    { "id": "e-hs-minor-cs", "source": "hs_grad", "target": "minor_cs" },
-    { "id": "e-hs-minor-it", "source": "hs_grad", "target": "minor_it" },
-
-    { "id": "e-usf-bscs", "source": "current_usf", "target": "bscs" },
-    { "id": "e-usf-bscp", "source": "current_usf", "target": "bscp" },
-    { "id": "e-usf-bscse", "source": "current_usf", "target": "bscse" },
-    { "id": "e-usf-bsai", "source": "current_usf", "target": "bsai" },
-    { "id": "e-usf-bscys", "source": "current_usf", "target": "bscys" },
-    { "id": "e-usf-bsit", "source": "current_usf", "target": "bsit" },
-    { "id": "e-usf-minor-cs", "source": "current_usf", "target": "minor_cs" },
-    { "id": "e-usf-minor-it", "source": "current_usf", "target": "minor_it" },
-
-    { "id": "e-tr-bscs", "source": "transfer", "target": "bscs" },
-    { "id": "e-tr-bscp", "source": "transfer", "target": "bscp" },
-    { "id": "e-tr-bscse", "source": "transfer", "target": "bscse" },
-    { "id": "e-tr-bsai", "source": "transfer", "target": "bsai" },
-    { "id": "e-tr-bscys", "source": "transfer", "target": "bscys" },
-    { "id": "e-tr-bsit", "source": "transfer", "target": "bsit" },
-    { "id": "e-tr-minor-cs", "source": "transfer", "target": "minor_cs" },
-    { "id": "e-tr-minor-it", "source": "transfer", "target": "minor_it" },
-
-    { "id": "e-wp-cert-path", "source": "working_pro", "target": "cert_pathway" },
-    { "id": "e-wp-cert-ai", "source": "working_pro", "target": "cert_ai" },
-    { "id": "e-wp-cert-ai-e", "source": "working_pro", "target": "cert_ai_everyday" },
-    { "id": "e-wp-micro-genai", "source": "working_pro", "target": "micro_genai" },
-    { "id": "e-wp-micro-whisper", "source": "working_pro", "target": "micro_whisperer" },
-    { "id": "e-wp-bscs", "source": "working_pro", "target": "bscs" },
-    { "id": "e-wp-bscp", "source": "working_pro", "target": "bscp" },
-    { "id": "e-wp-bscse", "source": "working_pro", "target": "bscse" },
-    { "id": "e-wp-bsai", "source": "working_pro", "target": "bsai" },
-    { "id": "e-wp-bscys", "source": "working_pro", "target": "bscys" },
-    { "id": "e-wp-bsit", "source": "working_pro", "target": "bsit" },
-    { "id": "e-wp-minor-cs", "source": "working_pro", "target": "minor_cs" },
-    { "id": "e-wp-minor-it", "source": "working_pro", "target": "minor_it" },
-
-    { "id": "e-bscs-business", "source": "bscs", "target": "bscs_business" },
-    { "id": "e-bscs-crim", "source": "bscs", "target": "bscs_crim" },
-    { "id": "e-bscs-iss", "source": "bscs", "target": "bscs_iss" },
-    { "id": "e-bscs-econ", "source": "bscs", "target": "bscs_econ" },
-    { "id": "e-bscs-anth", "source": "bscs", "target": "bscs_anth" },
-
-    { "id": "e-bscs-bsms", "source": "bscs", "target": "bs_ms" },
-    { "id": "e-bscp-bsms", "source": "bscp", "target": "bs_ms" },
-    { "id": "e-bscse-bsms", "source": "bscse", "target": "bs_ms" },
-    { "id": "e-bsai-bsms", "source": "bsai", "target": "bs_ms" },
-    { "id": "e-bscys-bsms", "source": "bscys", "target": "bs_ms" },
-
-    { "id": "e-bsms-mscs", "source": "bs_ms", "target": "mscs" },
-    { "id": "e-bsms-mscse", "source": "bs_ms", "target": "mscse" },
-    { "id": "e-bsms-mscpe", "source": "bs_ms", "target": "mscpe" },
-    { "id": "e-bsms-msai", "source": "bs_ms", "target": "msai" },
-    { "id": "e-bsms-mscy", "source": "bs_ms", "target": "mscy" }
+    {
+      "id": "e-hs-bscs",
+      "source": "hs_grad",
+      "target": "bscs"
+    },
+    {
+      "id": "e-hs-bscp",
+      "source": "hs_grad",
+      "target": "bscp"
+    },
+    {
+      "id": "e-hs-bscse",
+      "source": "hs_grad",
+      "target": "bscse"
+    },
+    {
+      "id": "e-hs-bsai",
+      "source": "hs_grad",
+      "target": "bsai"
+    },
+    {
+      "id": "e-hs-bscys",
+      "source": "hs_grad",
+      "target": "bscys"
+    },
+    {
+      "id": "e-hs-bsit",
+      "source": "hs_grad",
+      "target": "bsit"
+    },
+    {
+      "id": "e-hs-minor-cs",
+      "source": "hs_grad",
+      "target": "minor_cs"
+    },
+    {
+      "id": "e-hs-minor-it",
+      "source": "hs_grad",
+      "target": "minor_it"
+    },
+    {
+      "id": "e-usf-bscs",
+      "source": "current_usf",
+      "target": "bscs"
+    },
+    {
+      "id": "e-usf-bscp",
+      "source": "current_usf",
+      "target": "bscp"
+    },
+    {
+      "id": "e-usf-bscse",
+      "source": "current_usf",
+      "target": "bscse"
+    },
+    {
+      "id": "e-usf-bsai",
+      "source": "current_usf",
+      "target": "bsai"
+    },
+    {
+      "id": "e-usf-bscys",
+      "source": "current_usf",
+      "target": "bscys"
+    },
+    {
+      "id": "e-usf-bsit",
+      "source": "current_usf",
+      "target": "bsit"
+    },
+    {
+      "id": "e-usf-minor-cs",
+      "source": "current_usf",
+      "target": "minor_cs"
+    },
+    {
+      "id": "e-usf-minor-it",
+      "source": "current_usf",
+      "target": "minor_it"
+    },
+    {
+      "id": "e-tr-bscs",
+      "source": "transfer",
+      "target": "bscs"
+    },
+    {
+      "id": "e-tr-bscp",
+      "source": "transfer",
+      "target": "bscp"
+    },
+    {
+      "id": "e-tr-bscse",
+      "source": "transfer",
+      "target": "bscse"
+    },
+    {
+      "id": "e-tr-bsai",
+      "source": "transfer",
+      "target": "bsai"
+    },
+    {
+      "id": "e-tr-bscys",
+      "source": "transfer",
+      "target": "bscys"
+    },
+    {
+      "id": "e-tr-bsit",
+      "source": "transfer",
+      "target": "bsit"
+    },
+    {
+      "id": "e-tr-minor-cs",
+      "source": "transfer",
+      "target": "minor_cs"
+    },
+    {
+      "id": "e-tr-minor-it",
+      "source": "transfer",
+      "target": "minor_it"
+    },
+    {
+      "id": "e-wp-cert-path",
+      "source": "working_pro",
+      "target": "cert_pathway"
+    },
+    {
+      "id": "e-wp-cert-ai",
+      "source": "working_pro",
+      "target": "cert_ai"
+    },
+    {
+      "id": "e-wp-cert-ai-e",
+      "source": "working_pro",
+      "target": "cert_ai_everyday"
+    },
+    {
+      "id": "e-wp-micro-genai",
+      "source": "working_pro",
+      "target": "micro_genai"
+    },
+    {
+      "id": "e-wp-micro-whisper",
+      "source": "working_pro",
+      "target": "micro_whisperer"
+    },
+    {
+      "id": "e-wp-bscs",
+      "source": "working_pro",
+      "target": "bscs"
+    },
+    {
+      "id": "e-wp-bscp",
+      "source": "working_pro",
+      "target": "bscp"
+    },
+    {
+      "id": "e-wp-bscse",
+      "source": "working_pro",
+      "target": "bscse"
+    },
+    {
+      "id": "e-wp-bsai",
+      "source": "working_pro",
+      "target": "bsai"
+    },
+    {
+      "id": "e-wp-bscys",
+      "source": "working_pro",
+      "target": "bscys"
+    },
+    {
+      "id": "e-wp-bsit",
+      "source": "working_pro",
+      "target": "bsit"
+    },
+    {
+      "id": "e-wp-minor-cs",
+      "source": "working_pro",
+      "target": "minor_cs"
+    },
+    {
+      "id": "e-wp-minor-it",
+      "source": "working_pro",
+      "target": "minor_it"
+    },
+    {
+      "id": "e-bscs-business",
+      "source": "bscs",
+      "target": "bscs_business"
+    },
+    {
+      "id": "e-bscs-crim",
+      "source": "bscs",
+      "target": "bscs_crim"
+    },
+    {
+      "id": "e-bscs-iss",
+      "source": "bscs",
+      "target": "bscs_iss"
+    },
+    {
+      "id": "e-bscs-econ",
+      "source": "bscs",
+      "target": "bscs_econ"
+    },
+    {
+      "id": "e-bscs-anth",
+      "source": "bscs",
+      "target": "bscs_anth"
+    },
+    {
+      "id": "e-bscs-bsms",
+      "source": "bscs",
+      "target": "bs_ms"
+    },
+    {
+      "id": "e-bscp-bsms",
+      "source": "bscp",
+      "target": "bs_ms"
+    },
+    {
+      "id": "e-bscse-bsms",
+      "source": "bscse",
+      "target": "bs_ms"
+    },
+    {
+      "id": "e-bsai-bsms",
+      "source": "bsai",
+      "target": "bs_ms"
+    },
+    {
+      "id": "e-bscys-bsms",
+      "source": "bscys",
+      "target": "bs_ms"
+    },
+    {
+      "id": "e-bsms-mscs",
+      "source": "bs_ms",
+      "target": "mscs"
+    },
+    {
+      "id": "e-bsms-mscse",
+      "source": "bs_ms",
+      "target": "mscse"
+    },
+    {
+      "id": "e-bsms-mscpe",
+      "source": "bs_ms",
+      "target": "mscpe"
+    },
+    {
+      "id": "e-bsms-msai",
+      "source": "bs_ms",
+      "target": "msai"
+    },
+    {
+      "id": "e-bsms-mscy",
+      "source": "bs_ms",
+      "target": "mscy"
+    }
   ],
   "grads": [
     {
@@ -849,7 +1591,10 @@
       "summary": "Helped develop an AI system that estimates parking availability, applying classroom learning to a real-world campus problem.",
       "date": "December 11, 2025",
       "url": "https://www.usf.edu/ai-cybersecurity-computing/news/2025/usf-senior-finds-her-stride-helping-to-build-ai-tool-for-campus-parking.aspx",
-      "tags": ["Artificial Intelligence", "Computing"]
+      "tags": [
+        "Artificial Intelligence",
+        "Computing"
+      ]
     },
     {
       "id": "angelin-benny",
@@ -858,7 +1603,9 @@
       "summary": "Prepared to graduate in cybersecurity after switching majors and leading student organizations; overcame a surprise cancer diagnosis.",
       "date": "December 8, 2025",
       "url": "https://www.usf.edu/ai-cybersecurity-computing/news/2025/usf-cybersecurity-student-overcomes-surprise-cancer-diagnosis.aspx",
-      "tags": ["Cybersecurity"]
+      "tags": [
+        "Cybersecurity"
+      ]
     }
   ]
 }

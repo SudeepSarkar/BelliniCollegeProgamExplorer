@@ -32,6 +32,7 @@ const successStories = {
 export default function App() {
   const [triage, setTriage] = useState({
     visions: [],
+    statementSelections: [],
     startingLine: "",
     mathLevel: "",
     codingExperience: "",
