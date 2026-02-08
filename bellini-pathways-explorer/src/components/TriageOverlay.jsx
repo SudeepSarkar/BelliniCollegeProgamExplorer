@@ -108,13 +108,13 @@ export default function TriageOverlay({ triage, setTriage, onComplete }) {
 
   return (
     <motion.div
-      className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50"
+      className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50 overflow-auto"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
       <motion.div
-        className="w-[92%] max-w-2xl rounded-3xl bg-white shadow-card p-6 md:p-10"
+        className="w-[92%] max-w-3xl rounded-3xl bg-white shadow-card p-6 md:p-10 my-10 max-h-[88vh] overflow-y-auto"
         initial={{ y: 30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 20, opacity: 0 }}
@@ -209,7 +209,7 @@ export default function TriageOverlay({ triage, setTriage, onComplete }) {
           </div>
         </div>
 
-        <div className="mt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div className="mt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4 sticky bottom-0 bg-white/95 py-4">
           <p className="text-xs text-slate-500">
             Choose exactly three vision statements. You can edit these later using the “Edit Triage” button.
           </p>
@@ -220,7 +220,7 @@ export default function TriageOverlay({ triage, setTriage, onComplete }) {
             disabled={!isComplete}
             onClick={onComplete}
           >
-            Explore Paths
+            Submit & See Programs
           </button>
         </div>
       </motion.div>
