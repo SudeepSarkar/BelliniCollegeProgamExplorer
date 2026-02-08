@@ -58,7 +58,7 @@ export default function App() {
         <div className="max-w-6xl mx-auto">
           <p className="text-sm uppercase tracking-[0.4em] text-usf-green">Bellini College</p>
           <h1 className="mt-3 text-3xl md:text-5xl font-display text-usf-ink">
-            Pathways Explorer
+            Pathways Explorer (under construction)
           </h1>
           <p className="mt-3 text-base md:text-lg text-slate-600 max-w-3xl">
             Map your background to programs and careers. Explore left-to-right pathways and spotlight the opportunities that fit your goals.

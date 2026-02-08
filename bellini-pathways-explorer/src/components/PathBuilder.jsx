@@ -26,6 +26,28 @@ function matchesPreference(node, preference) {
   return true;
 }
 
+function allowedByStartingLine(node, startingLine) {
+  if (!startingLine) return true;
+  const kind = node.data?.kind || "";
+  const isPhd = node.data?.label?.includes("PhD");
+
+  switch (startingLine) {
+    case "High School / First-Year":
+      return ["undergraduate", "interdisciplinary"].includes(kind);
+    case "Current USF Student":
+      return ["undergraduate", "interdisciplinary", "minor"].includes(kind);
+    case "Transfer Student":
+      return ["undergraduate", "interdisciplinary"].includes(kind) || node.id === "cert_pathway";
+    case "Working Professional / Career Switcher":
+      return (
+        ["graduate", "grad certificate", "microcredential", "pathway"].includes(kind) &&
+        !isPhd
+      );
+    default:
+      return true;
+  }
+}
+
 function matchesCareerGoal(job, careerGoal) {
   if (!careerGoal) return true;
   if (!job.goals || job.goals.length === 0) return true;
@@ -118,6 +140,7 @@ export default function PathBuilder({ data, triage, active }) {
     if (!active) return [];
     const programs = data.nodes.filter((node) => {
       if (node.type !== "degreeNode" && node.type !== "bridgeNode") return false;
+      if (!allowedByStartingLine(node, triage.startingLine)) return false;
       const matchesVision =
         triage.visions?.length > 0
           ? triage.visions.some((vision) => node.data?.visions?.includes(vision))
@@ -128,7 +151,11 @@ export default function PathBuilder({ data, triage, active }) {
 
       const preference =
         triage.credentialType === "Micro-Pathway" ? triage.microPath : triage.degreeLevel;
-      if (preference && !matchesPreference(node, preference)) return false;
+      if (preference && !matchesPreference(node, preference)) {
+        if (!(triage.startingLine === "Transfer Student" && node.id === "cert_pathway")) {
+          return false;
+        }
+      }
       return true;
     });
 
@@ -139,6 +166,7 @@ export default function PathBuilder({ data, triage, active }) {
     triage.visions,
     triage.mathLevel,
     triage.codingExperience,
+    triage.startingLine,
     triage.credentialType,
     triage.microPath,
     triage.degreeLevel,
@@ -212,6 +240,7 @@ export default function PathBuilder({ data, triage, active }) {
                   (triage.visions?.length
                     ? triage.visions.some((vision) => program.data?.visions?.includes(vision))
                     : false) ||
+                  (triage.startingLine === "Transfer Student" && program.id === "cert_pathway") ||
                   matchesReadiness(program, triage.mathLevel, triage.codingExperience)
                 }
                 onSelect={() => setSelectedProgramId(program.id)}
