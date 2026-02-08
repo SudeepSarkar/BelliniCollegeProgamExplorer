@@ -22,10 +22,12 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
+        working-directory: bellini-pathways-explorer
       - run: npm run build
+        working-directory: bellini-pathways-explorer
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: bellini-pathways-explorer/dist
 
   deploy:
     needs: build
