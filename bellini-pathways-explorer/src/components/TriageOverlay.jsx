@@ -75,6 +75,17 @@ const visionOptions = [
   },
 ];
 
+const visionStatements = visionOptions.flatMap((category) =>
+  category.statements.map((statement) => ({
+    statement,
+    categoryId: category.categoryId,
+  }))
+);
+
+const statementToCategory = Object.fromEntries(
+  visionStatements.map(({ statement, categoryId }) => [statement, categoryId])
+);
+
 const startingLineOptions = [
   "High School / First-Year",
   "Current USF Student",
@@ -159,54 +170,40 @@ export default function TriageOverlay({ triage, setTriage, onComplete }) {
           Pick your top three “I want” statements. Then we’ll map your vision to an achievable pathway.
         </p>
 
-        <div className="mt-6 space-y-6">
-          {visionOptions.map((category) => (
-            <div key={category.categoryId}>
-            <div className="text-sm font-semibold text-slate-700"></div>
-              <div className="mt-3 grid gap-3 md:grid-cols-2">
-                {category.statements.map((statement) => {
-                  const active = triage.statementSelections.includes(statement);
-                  const disabled = !active && triage.statementSelections.length >= 3;
-                  return (
-                    <button
-                      key={statement}
-                      className={`rounded-2xl border p-4 text-left transition ${
-                        active
-                          ? "border-usf-green bg-usf-mist"
-                          : "border-slate-200 hover:border-usf-green"
-                      } ${disabled ? "opacity-50 cursor-not-allowed" : ""}`}
-                      onClick={() => {
-                        if (disabled) return;
-                        setTriage((prev) => {
-                          const exists = prev.statementSelections.includes(statement);
-                          const nextStatements = exists
-                            ? prev.statementSelections.filter((item) => item !== statement)
-                            : [...prev.statementSelections, statement];
-                          const nextVisions = Array.from(
-                            new Set(
-                              visionOptions
-                                .flatMap((cat) =>
-                                  cat.statements
-                                    .filter((item) => nextStatements.includes(item))
-                                    .map(() => cat.categoryId)
-                                )
-                            )
-                          );
-                          return {
-                            ...prev,
-                            statementSelections: nextStatements,
-                            visions: nextVisions,
-                          };
-                        });
-                      }}
-                    >
-                      <div className="text-sm text-slate-700">{statement}</div>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          ))}
+        <div className="mt-6 grid gap-3 md:grid-cols-2">
+          {visionStatements.map(({ statement }) => {
+            const active = triage.statementSelections.includes(statement);
+            const disabled = !active && triage.statementSelections.length >= 3;
+            return (
+              <button
+                key={statement}
+                className={`rounded-2xl border p-4 text-left transition ${
+                  active
+                    ? "border-usf-green bg-usf-mist"
+                    : "border-slate-200 hover:border-usf-green"
+                } ${disabled ? "opacity-50 cursor-not-allowed" : ""}`}
+                onClick={() => {
+                  if (disabled) return;
+                  setTriage((prev) => {
+                    const exists = prev.statementSelections.includes(statement);
+                    const nextStatements = exists
+                      ? prev.statementSelections.filter((item) => item !== statement)
+                      : [...prev.statementSelections, statement];
+                    const nextVisions = Array.from(
+                      new Set(nextStatements.map((item) => statementToCategory[item]).filter(Boolean))
+                    );
+                    return {
+                      ...prev,
+                      statementSelections: nextStatements,
+                      visions: nextVisions,
+                    };
+                  });
+                }}
+              >
+                <div className="text-sm text-slate-700">{statement}</div>
+              </button>
+            );
+          })}
         </div>
 
         <div className="mt-8 rounded-3xl border border-slate-200 bg-white p-6">
