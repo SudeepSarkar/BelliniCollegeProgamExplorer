@@ -1,9 +1,11 @@
 import { useMemo, useState, useEffect } from "react";
 
-function matchesFoundation(node, foundation) {
-  if (!foundation) return true;
+function matchesReadiness(node, mathLevel, codingExperience) {
+  if (!mathLevel && !codingExperience) return true;
   if (!node.data?.foundations) return true;
-  return node.data.foundations.includes(foundation);
+  const matchesMath = mathLevel ? node.data.foundations.includes(mathLevel) : true;
+  const matchesCoding = codingExperience ? node.data.foundations.includes(codingExperience) : true;
+  return matchesMath && matchesCoding;
 }
 
 function matchesInterest(node, interest) {
@@ -45,6 +47,15 @@ function ProgramCard({ program, selected, recommended, onSelect }) {
         <div className="program-title">{program.data.label}</div>
         <div className="program-meta">{program.data.kind}</div>
         {recommended && <div className="program-recommend">Recommended</div>}
+        {program.data.visionTags?.length > 0 && (
+          <div className="mt-2 flex flex-wrap gap-2">
+            {program.data.visionTags.map((tag) => (
+              <span key={tag} className="tag">
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
         {program.data.skills?.length > 0 && (
           <div className="mt-2 text-xs text-slate-600">
             {program.data.skills.slice(0, 4).join(" • ")}
@@ -107,14 +118,31 @@ export default function PathBuilder({ data, triage, active }) {
     if (!active) return [];
     const programs = data.nodes.filter((node) => {
       if (node.type !== "degreeNode" && node.type !== "bridgeNode") return false;
-      if (triage.foundation && !matchesFoundation(node, triage.foundation)) return false;
-      if (triage.interest && !matchesInterest(node, triage.interest)) return false;
-      if (triage.preference && !matchesPreference(node, triage.preference)) return false;
+      const matchesVision =
+        triage.visions?.length > 0
+          ? triage.visions.some((vision) => node.data?.visions?.includes(vision))
+          : true;
+      if (!matchesVision) return false;
+
+      if (!matchesReadiness(node, triage.mathLevel, triage.codingExperience)) return false;
+
+      const preference =
+        triage.credentialType === "Micro-Pathway" ? triage.microPath : triage.degreeLevel;
+      if (preference && !matchesPreference(node, preference)) return false;
       return true;
     });
 
     return programs.sort((a, b) => a.data.label.localeCompare(b.data.label));
-  }, [active, data.nodes, triage.foundation, triage.interest, triage.preference]);
+  }, [
+    active,
+    data.nodes,
+    triage.visions,
+    triage.mathLevel,
+    triage.codingExperience,
+    triage.credentialType,
+    triage.microPath,
+    triage.degreeLevel,
+  ]);
 
   useEffect(() => {
     if (matchingPrograms.length === 0) {
@@ -181,8 +209,10 @@ export default function PathBuilder({ data, triage, active }) {
                 program={program}
                 selected={selectedProgramId === program.id}
                 recommended={
-                  (triage.interest && matchesInterest(program, triage.interest)) ||
-                  (triage.foundation && matchesFoundation(program, triage.foundation))
+                  (triage.visions?.length
+                    ? triage.visions.some((vision) => program.data?.visions?.includes(vision))
+                    : false) ||
+                  matchesReadiness(program, triage.mathLevel, triage.codingExperience)
                 }
                 onSelect={() => setSelectedProgramId(program.id)}
               />

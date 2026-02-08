@@ -31,10 +31,13 @@ const successStories = {
 
 export default function App() {
   const [triage, setTriage] = useState({
-    startingPoint: "",
-    interest: "",
-    foundation: "",
-    preference: "",
+    visions: [],
+    startingLine: "",
+    mathLevel: "",
+    codingExperience: "",
+    credentialType: "",
+    degreeLevel: "",
+    microPath: "",
     careerGoal: "",
   });
   const [triageComplete, setTriageComplete] = useState(false);

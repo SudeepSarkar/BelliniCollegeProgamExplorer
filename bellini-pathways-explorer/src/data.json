@@ -48,8 +48,15 @@
         "label": "Computer Science, BSCS",
         "kind": "undergraduate",
         "skills": ["Programming", "Algorithms", "Systems"],
+        "visions": ["The Architect (CS/CSE)", "The Pioneer (AI)", "The Guardian (CyS)"],
+        "visionTags": ["The Architect", "The Pioneer", "The Guardian"],
         "interests": ["Building software & apps", "Working with data & patterns"],
-        "foundations": ["Pre-Calculus / Trig", "AP Calculus or higher", "Some coding / basic math"],
+        "foundations": [
+          "Foundational: Algebra & Geometry",
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
+          "Some coding background"
+        ],
         "preferences": ["BS"],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscs.aspx",
         "jobs": [
@@ -59,7 +66,7 @@
             "salary": "Median national salary $103,135",
             "source": "USF BSCS career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscs.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
+            "goals": ["Industry", "Public Sector"]
           },
           {
             "title": "Cybersecurity Analyst",
@@ -67,7 +74,7 @@
             "salary": "Median national salary $103,135",
             "source": "USF BSCS career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscs.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
+            "goals": ["Industry", "Public Sector"]
           },
           {
             "title": "Data Scientist",
@@ -75,7 +82,7 @@
             "salary": "Median national salary $103,135",
             "source": "USF BSCS career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscs.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
+            "goals": ["Industry", "Public Sector"]
           },
           {
             "title": "Systems Architect",
@@ -83,7 +90,7 @@
             "salary": "Median national salary $103,135",
             "source": "USF BSCS career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscs.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
+            "goals": ["Industry"]
           },
           {
             "title": "Research Scientist",
@@ -91,7 +98,7 @@
             "salary": "Median national salary $103,135",
             "source": "USF BSCS career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscs.aspx",
-            "goals": ["National labs", "Academia"]
+            "goals": ["Academia", "Public Sector"]
           }
         ]
       },
@@ -104,8 +111,14 @@
         "label": "Computer Engineering, BSCP",
         "kind": "undergraduate",
         "skills": ["Hardware", "Embedded Systems", "Design"],
+        "visions": ["The Designer (CpE/CSE)"],
+        "visionTags": ["The Designer"],
         "interests": ["Hardware & devices"],
-        "foundations": ["Pre-Calculus / Trig", "AP Calculus or higher", "Some coding / basic math"],
+        "foundations": [
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
+          "Some coding background"
+        ],
         "preferences": ["BS"],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscp.aspx",
         "jobs": [
@@ -115,15 +128,7 @@
             "salary": "Median national salary $155,020",
             "source": "USF BSCP career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscp.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
-          {
-            "title": "Software Engineer",
-            "description": "Builds software for hardware and embedded systems.",
-            "salary": "Median national salary $155,020",
-            "source": "USF BSCP career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscp.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
+            "goals": ["Industry", "Public Sector"]
           },
           {
             "title": "Embedded Software Engineer",
@@ -131,23 +136,7 @@
             "salary": "Median national salary $155,020",
             "source": "USF BSCP career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscp.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
-          {
-            "title": "Systems Engineer",
-            "description": "Integrates hardware and software into reliable systems.",
-            "salary": "Median national salary $155,020",
-            "source": "USF BSCP career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscp.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
-          {
-            "title": "ASIC Architect",
-            "description": "Designs specialized chips for computing systems.",
-            "salary": "Median national salary $155,020",
-            "source": "USF BSCP career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscp.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
+            "goals": ["Industry", "Public Sector"]
           }
         ]
       },
@@ -160,8 +149,14 @@
         "label": "Computer Science & Engineering, BSCSE (Starting Fall 2026)",
         "kind": "undergraduate",
         "skills": ["Software", "Systems", "Engineering"],
+        "visions": ["The Architect (CS/CSE)", "The Designer (CpE/CSE)"],
+        "visionTags": ["The Architect", "The Designer"],
         "interests": ["Building software & apps", "Hardware & devices"],
-        "foundations": ["Pre-Calculus / Trig", "AP Calculus or higher", "Some coding / basic math"],
+        "foundations": [
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
+          "Some coding background"
+        ],
         "preferences": ["BS"],
         "isNew": true
       },
@@ -174,8 +169,14 @@
         "label": "Artificial Intelligence, BSAI",
         "kind": "undergraduate",
         "skills": ["ML", "NLP", "Ethics"],
+        "visions": ["The Pioneer (AI)"],
+        "visionTags": ["The Pioneer"],
         "interests": ["Making computers learn", "Working with data & patterns"],
-        "foundations": ["Pre-Calculus / Trig", "AP Calculus or higher", "Some coding / basic math"],
+        "foundations": [
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
+          "Some coding background"
+        ],
         "preferences": ["BS"],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bsai.aspx",
         "jobs": [
@@ -185,39 +186,7 @@
             "salary": "Median salary in AI fields $156,998",
             "source": "USF BSAI career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bsai.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
-          {
-            "title": "AI Engineer",
-            "description": "Develops AI applications and systems.",
-            "salary": "Median salary in AI fields $156,998",
-            "source": "USF BSAI career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bsai.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
-          {
-            "title": "AI Systems Engineer",
-            "description": "Designs and integrates AI into production systems.",
-            "salary": "Median salary in AI fields $156,998",
-            "source": "USF BSAI career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bsai.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
-          {
-            "title": "AI Quality Assurance Engineer",
-            "description": "Tests AI systems for reliability and performance.",
-            "salary": "Median salary in AI fields $156,998",
-            "source": "USF BSAI career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bsai.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
-          {
-            "title": "Computer Vision Engineer",
-            "description": "Builds systems that interpret images and video.",
-            "salary": "Median salary in AI fields $156,998",
-            "source": "USF BSAI career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bsai.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
+            "goals": ["Industry", "Public Sector"]
           }
         ]
       },
@@ -230,8 +199,14 @@
         "label": "Cybersecurity, BSCYS",
         "kind": "undergraduate",
         "skills": ["Security", "Networks", "Forensics"],
+        "visions": ["The Guardian (CyS)", "The Investigator (CS+Criminology)"],
+        "visionTags": ["The Guardian", "The Investigator"],
         "interests": ["Protecting systems & data"],
-        "foundations": ["Pre-Calculus / Trig", "AP Calculus or higher", "Some coding / basic math"],
+        "foundations": [
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
+          "Some coding background"
+        ],
         "preferences": ["BS"],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscys.aspx",
         "jobs": [
@@ -241,31 +216,7 @@
             "salary": "Median national salary $124,910",
             "source": "USF BSCYS career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscys.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
-          {
-            "title": "Cybersecurity Consultant",
-            "description": "Advises organizations on security strategy and controls.",
-            "salary": "Median national salary $124,910",
-            "source": "USF BSCYS career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscys.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
-          {
-            "title": "Cybersecurity Risk Analyst",
-            "description": "Assesses risks and mitigates security threats.",
-            "salary": "Median national salary $124,910",
-            "source": "USF BSCYS career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscys.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
-          {
-            "title": "IT Security Specialist",
-            "description": "Implements and maintains security protections.",
-            "salary": "Median national salary $124,910",
-            "source": "USF BSCYS career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bscys.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
+            "goals": ["Industry", "Public Sector"]
           }
         ]
       },
@@ -278,8 +229,15 @@
         "label": "Information Technology, BSIT",
         "kind": "undergraduate",
         "skills": ["IT Ops", "Cloud", "Support"],
+        "visions": ["The Expert (IT)", "The Guardian (CyS)"],
+        "visionTags": ["The Expert", "The Guardian"],
         "interests": ["Building software & apps", "Protecting systems & data"],
-        "foundations": ["Algebra & geometry", "Some coding / basic math", "New to coding"],
+        "foundations": [
+          "Foundational: Algebra & Geometry",
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "New to coding",
+          "Some coding background"
+        ],
         "preferences": ["BS"],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bsit.aspx",
         "jobs": [
@@ -289,39 +247,7 @@
             "salary": "Median salary for computer & IT occupations $105,993; information security analyst avg $124,910",
             "source": "USF BSIT career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bsit.aspx",
-            "goals": ["Job in industry", "Government"]
-          },
-          {
-            "title": "Database Administrator",
-            "description": "Manages data systems and ensures availability and security.",
-            "salary": "Median salary for computer & IT occupations $105,993",
-            "source": "USF BSIT career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bsit.aspx",
-            "goals": ["Job in industry", "Government"]
-          },
-          {
-            "title": "Software Developer",
-            "description": "Builds and maintains software applications.",
-            "salary": "Median salary for computer & IT occupations $105,993",
-            "source": "USF BSIT career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bsit.aspx",
-            "goals": ["Job in industry", "Government"]
-          },
-          {
-            "title": "Web Developer",
-            "description": "Designs and builds web applications and sites.",
-            "salary": "Median salary for computer & IT occupations $105,993",
-            "source": "USF BSIT career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bsit.aspx",
-            "goals": ["Job in industry", "Government"]
-          },
-          {
-            "title": "Cloud Architect",
-            "description": "Designs cloud infrastructure for applications and data.",
-            "salary": "Median salary for computer & IT occupations $105,993",
-            "source": "USF BSIT career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/bsit.aspx",
-            "goals": ["Job in industry", "Government"]
+            "goals": ["Industry", "Public Sector"]
           }
         ]
       },
@@ -335,8 +261,14 @@
         "label": "BSCS + Business, BS",
         "kind": "interdisciplinary",
         "skills": ["CS", "Business", "Analytics"],
+        "visions": ["The Leader (CS+Business)", "The Architect (CS/CSE)"],
+        "visionTags": ["The Leader", "The Architect"],
         "interests": ["Tech + society/business"],
-        "foundations": ["Pre-Calculus / Trig", "AP Calculus or higher", "Some coding / basic math"],
+        "foundations": [
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
+          "Some coding background"
+        ],
         "preferences": ["BS"],
         "interdisciplinary": true,
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/cs-and-business.aspx"
@@ -350,8 +282,14 @@
         "label": "BSCS + Criminology, BS",
         "kind": "interdisciplinary",
         "skills": ["CS", "Law", "Forensics"],
+        "visions": ["The Investigator (CS+Criminology)", "The Guardian (CyS)"],
+        "visionTags": ["The Investigator", "The Guardian"],
         "interests": ["Tech + society/business", "Protecting systems & data"],
-        "foundations": ["Pre-Calculus / Trig", "AP Calculus or higher", "Some coding / basic math"],
+        "foundations": [
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
+          "Some coding background"
+        ],
         "preferences": ["BS"],
         "interdisciplinary": true,
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/cs-and-criminology.aspx"
@@ -365,8 +303,14 @@
         "label": "BSCS + Interdisciplinary Social Sciences, BS",
         "kind": "interdisciplinary",
         "skills": ["CS", "Social Science", "Policy"],
+        "visions": ["The Ethicist (CS+Social Sciences)", "The Leader (CS+Business)"],
+        "visionTags": ["The Ethicist", "The Leader"],
         "interests": ["Tech + society/business"],
-        "foundations": ["Pre-Calculus / Trig", "AP Calculus or higher", "Some coding / basic math"],
+        "foundations": [
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
+          "Some coding background"
+        ],
         "preferences": ["BS"],
         "interdisciplinary": true,
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/cs-and-social-sciences.aspx"
@@ -380,8 +324,14 @@
         "label": "BSCS + Economics (Est. Fall 2027)",
         "kind": "interdisciplinary",
         "skills": ["CS", "Economics", "Data"],
+        "visions": ["The Leader (CS+Business)", "The Architect (CS/CSE)"],
+        "visionTags": ["The Leader", "The Architect"],
         "interests": ["Tech + society/business", "Working with data & patterns"],
-        "foundations": ["Pre-Calculus / Trig", "AP Calculus or higher", "Some coding / basic math"],
+        "foundations": [
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
+          "Some coding background"
+        ],
         "preferences": ["BS"],
         "interdisciplinary": true,
         "isNew": true
@@ -395,8 +345,14 @@
         "label": "BSCS + Anthropology (Est. Fall 2027)",
         "kind": "interdisciplinary",
         "skills": ["CS", "Human Context", "Research"],
+        "visions": ["The Ethicist (CS+Social Sciences)", "The Architect (CS/CSE)"],
+        "visionTags": ["The Ethicist", "The Architect"],
         "interests": ["Tech + society/business"],
-        "foundations": ["Pre-Calculus / Trig", "AP Calculus or higher", "Some coding / basic math"],
+        "foundations": [
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
+          "Some coding background"
+        ],
         "preferences": ["BS"],
         "interdisciplinary": true,
         "isNew": true
@@ -412,8 +368,15 @@
         "kind": "minor",
         "skills": ["CS Foundations", "Programming", "Problem Solving"],
         "tags": ["15 credits"],
+        "visions": ["The Architect (CS/CSE)", "The Leader (CS+Business)"],
+        "visionTags": ["The Architect", "The Leader"],
         "interests": ["Building software & apps"],
-        "foundations": ["Algebra & geometry", "Some coding / basic math", "New to coding"],
+        "foundations": [
+          "Foundational: Algebra & Geometry",
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "New to coding",
+          "Some coding background"
+        ],
         "preferences": ["Minor"],
         "interdisciplinary": true,
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/minors.aspx"
@@ -428,8 +391,15 @@
         "kind": "minor",
         "skills": ["IT Basics", "Support", "Systems"],
         "tags": ["21 credits"],
+        "visions": ["The Expert (IT)", "The Guardian (CyS)"],
+        "visionTags": ["The Expert", "The Guardian"],
         "interests": ["Protecting systems & data", "Building software & apps"],
-        "foundations": ["Algebra & geometry", "Some coding / basic math", "New to coding"],
+        "foundations": [
+          "Foundational: Algebra & Geometry",
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "New to coding",
+          "Some coding background"
+        ],
         "preferences": ["Minor"],
         "interdisciplinary": true,
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/undergraduate/minors.aspx"
@@ -444,8 +414,14 @@
         "label": "BS/MS Pathways",
         "kind": "pathway",
         "skills": ["Accelerated", "Advising", "Research"],
+        "visions": ["The Architect (CS/CSE)", "The Pioneer (AI)"],
+        "visionTags": ["The Architect", "The Pioneer"],
         "interests": ["Building software & apps", "Working with data & patterns"],
-        "foundations": ["Pre-Calculus / Trig", "AP Calculus or higher", "Some coding / basic math"],
+        "foundations": [
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
+          "Some coding background"
+        ],
         "preferences": ["MS"],
         "interdisciplinary": true,
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/pathways-program.aspx"
@@ -459,8 +435,14 @@
         "label": "Computer Science, MSCS",
         "kind": "graduate",
         "skills": ["Advanced CS", "Research", "Systems"],
+        "visions": ["The Architect (CS/CSE)", "The Pioneer (AI)", "The Guardian (CyS)"],
+        "visionTags": ["The Architect", "The Pioneer", "The Guardian"],
         "interests": ["Building software & apps", "Working with data & patterns"],
-        "foundations": ["Pre-Calculus / Trig", "AP Calculus or higher", "Some coding / basic math"],
+        "foundations": [
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
+          "Some coding background"
+        ],
         "preferences": ["MS"],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/mscs.aspx",
         "jobs": [
@@ -470,39 +452,7 @@
             "salary": "Median national salary $103,135",
             "source": "USF MSCS career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/mscs.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
-          {
-            "title": "Cybersecurity Analyst",
-            "description": "Analyzes and responds to security threats.",
-            "salary": "Median national salary $103,135",
-            "source": "USF MSCS career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/mscs.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
-          {
-            "title": "Data Scientist",
-            "description": "Builds models and insights from data.",
-            "salary": "Median national salary $103,135",
-            "source": "USF MSCS career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/mscs.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
-          {
-            "title": "Systems Architect",
-            "description": "Designs complex computing systems.",
-            "salary": "Median national salary $103,135",
-            "source": "USF MSCS career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/mscs.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
-          {
-            "title": "Research Scientist",
-            "description": "Conducts advanced computing research.",
-            "salary": "Median national salary $103,135",
-            "source": "USF MSCS career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/mscs.aspx",
-            "goals": ["National labs", "Academia"]
+            "goals": ["Industry", "Public Sector"]
           }
         ]
       },
@@ -515,8 +465,14 @@
         "label": "Computer Science & Engineering, MSCSE (Starting Fall 2026)",
         "kind": "graduate",
         "skills": ["Software", "Engineering", "Systems"],
+        "visions": ["The Architect (CS/CSE)", "The Designer (CpE/CSE)"],
+        "visionTags": ["The Architect", "The Designer"],
         "interests": ["Building software & apps", "Hardware & devices"],
-        "foundations": ["Pre-Calculus / Trig", "AP Calculus or higher", "Some coding / basic math"],
+        "foundations": [
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
+          "Some coding background"
+        ],
         "preferences": ["MS"],
         "isNew": true
       },
@@ -529,50 +485,24 @@
         "label": "Computer Engineering, MSCpE",
         "kind": "graduate",
         "skills": ["Hardware", "Systems", "Design"],
+        "visions": ["The Designer (CpE/CSE)"],
+        "visionTags": ["The Designer"],
         "interests": ["Hardware & devices"],
-        "foundations": ["Pre-Calculus / Trig", "AP Calculus or higher", "Some coding / basic math"],
+        "foundations": [
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
+          "Some coding background"
+        ],
         "preferences": ["MS"],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/mscpe.aspx",
         "jobs": [
-          {
-            "title": "Software Engineer",
-            "description": "Builds software systems and applications.",
-            "salary": "Median national salary $136,752",
-            "source": "USF MSCpE career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/mscpe.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
-          {
-            "title": "Data Analyst",
-            "description": "Analyzes and interprets data to guide decisions.",
-            "salary": "Median national salary $136,752",
-            "source": "USF MSCpE career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/mscpe.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
-          {
-            "title": "Principal Software Engineer",
-            "description": "Leads technical design and development efforts.",
-            "salary": "Median national salary $136,752",
-            "source": "USF MSCpE career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/mscpe.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
-          {
-            "title": "Engineering Manager",
-            "description": "Manages engineering teams and delivery.",
-            "salary": "Median national salary $136,752",
-            "source": "USF MSCpE career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/mscpe.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
           {
             "title": "Solutions Architect",
             "description": "Designs solutions across systems and platforms.",
             "salary": "Median national salary $136,752",
             "source": "USF MSCpE career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/mscpe.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
+            "goals": ["Industry", "Public Sector"]
           }
         ]
       },
@@ -585,50 +515,24 @@
         "label": "Artificial Intelligence, MSAI",
         "kind": "graduate",
         "skills": ["Deep Learning", "NLP", "Responsible AI"],
+        "visions": ["The Pioneer (AI)", "The Ethicist (CS+Social Sciences)"],
+        "visionTags": ["The Pioneer", "The Ethicist"],
         "interests": ["Making computers learn", "Working with data & patterns"],
-        "foundations": ["Pre-Calculus / Trig", "AP Calculus or higher", "Some coding / basic math"],
+        "foundations": [
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
+          "Some coding background"
+        ],
         "preferences": ["MS"],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/msai.aspx",
         "jobs": [
-          {
-            "title": "Prompt Engineer",
-            "description": "Designs prompts and workflows for generative AI systems.",
-            "salary": "Median salary $140,910 (computer & information research scientists)",
-            "source": "USF MSAI career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/msai.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
-          {
-            "title": "Model Validator",
-            "description": "Tests AI models for reliability and safety.",
-            "salary": "Median salary $140,910; AI fields median $156,998",
-            "source": "USF MSAI career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/msai.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
-          {
-            "title": "Decision Engineer",
-            "description": "Builds AI-driven decision systems.",
-            "salary": "Median salary $140,910; AI fields median $156,998",
-            "source": "USF MSAI career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/msai.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
           {
             "title": "AI Product Manager",
             "description": "Leads AI product strategy and development.",
             "salary": "Median salary $140,910; AI fields median $156,998",
             "source": "USF MSAI career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/msai.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
-          },
-          {
-            "title": "AI Ethicist",
-            "description": "Guides responsible AI development and policy.",
-            "salary": "Median salary $140,910; AI fields median $156,998",
-            "source": "USF MSAI career outlook",
-            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/msai.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
+            "goals": ["Industry", "Public Sector"]
           }
         ]
       },
@@ -641,8 +545,14 @@
         "label": "Cybersecurity, MS",
         "kind": "graduate",
         "skills": ["Threats", "Cloud", "Policy"],
+        "visions": ["The Guardian (CyS)", "The Investigator (CS+Criminology)"],
+        "visionTags": ["The Guardian", "The Investigator"],
         "interests": ["Protecting systems & data"],
-        "foundations": ["Pre-Calculus / Trig", "AP Calculus or higher", "Some coding / basic math"],
+        "foundations": [
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "Advanced: AP Calculus or higher",
+          "Some coding background"
+        ],
         "preferences": ["MS"],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/mscys.aspx",
         "jobs": [
@@ -652,7 +562,7 @@
             "salary": "Average advertised salary $118,482; Florida average $102,896",
             "source": "USF MSCyS career outlook",
             "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/mscys.aspx",
-            "goals": ["Job in industry", "Government", "National labs"]
+            "goals": ["Industry", "Public Sector"]
           }
         ]
       },
@@ -665,8 +575,14 @@
         "label": "Computer Science and Engineering, PhD",
         "kind": "graduate",
         "skills": ["Research", "Teaching", "Publication"],
+        "visions": ["The Architect (CS/CSE)", "The Designer (CpE/CSE)"],
+        "visionTags": ["The Architect", "The Designer"],
         "interests": ["Building software & apps", "Working with data & patterns", "Hardware & devices"],
-        "foundations": ["AP Calculus or higher", "Pre-Calculus / Trig", "Some coding / basic math"],
+        "foundations": [
+          "Advanced: AP Calculus or higher",
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "Some coding background"
+        ],
         "preferences": ["PhD"],
         "interdisciplinary": true,
         "url": "https://usf.to/PhD-Computer-Science-and-Engineering"
@@ -680,8 +596,14 @@
         "label": "Big Data Analytics, PhD",
         "kind": "graduate",
         "skills": ["Analytics", "Research", "Data Systems"],
+        "visions": ["The Pioneer (AI)", "The Architect (CS/CSE)"],
+        "visionTags": ["The Pioneer", "The Architect"],
         "interests": ["Working with data & patterns", "Making computers learn"],
-        "foundations": ["AP Calculus or higher", "Pre-Calculus / Trig", "Some coding / basic math"],
+        "foundations": [
+          "Advanced: AP Calculus or higher",
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "Some coding background"
+        ],
         "preferences": ["PhD"],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate/phd-data-analytics/"
       },
@@ -695,8 +617,15 @@
         "label": "Artificial Intelligence (Graduate Certificate)",
         "kind": "grad certificate",
         "skills": ["AI", "Applied ML", "Ethics"],
+        "visions": ["The Pioneer (AI)", "The Ethicist (CS+Social Sciences)"],
+        "visionTags": ["The Pioneer", "The Ethicist"],
         "interests": ["Making computers learn", "Working with data & patterns"],
-        "foundations": ["Algebra & geometry", "Pre-Calculus / Trig", "Some coding / basic math"],
+        "foundations": [
+          "Foundational: Algebra & Geometry",
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "New to coding",
+          "Some coding background"
+        ],
         "preferences": ["Certificate"],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate-certificates/ai/"
       },
@@ -709,9 +638,16 @@
         "label": "Pathway to Computing (Graduate Certificate)",
         "kind": "grad certificate",
         "skills": ["CS Foundations", "Preparation", "Bridge"],
+        "visions": ["The Architect (CS/CSE)", "The Expert (IT)"],
+        "visionTags": ["The Architect", "The Expert"],
         "tags": ["For non-computing majors"],
         "interests": ["Building software & apps"],
-        "foundations": ["Algebra & geometry", "Some coding / basic math", "New to coding"],
+        "foundations": [
+          "Foundational: Algebra & Geometry",
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "New to coding",
+          "Some coding background"
+        ],
         "preferences": ["Certificate"],
         "interdisciplinary": true,
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate-certificates/pathway-to-computing/"
@@ -725,8 +661,15 @@
         "label": "AI and Everyday Impact: Applied Practices Graduate Certificate",
         "kind": "grad certificate",
         "skills": ["Applied AI", "Practice", "Impact"],
+        "visions": ["The Ethicist (CS+Social Sciences)", "The Pioneer (AI)"],
+        "visionTags": ["The Ethicist", "The Pioneer"],
         "interests": ["Making computers learn", "Tech + society/business"],
-        "foundations": ["Algebra & geometry", "Pre-Calculus / Trig", "Some coding / basic math"],
+        "foundations": [
+          "Foundational: Algebra & Geometry",
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "New to coding",
+          "Some coding background"
+        ],
         "preferences": ["Certificate"],
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/graduate-certificates/ai-and-everyday-impact/"
       },
@@ -741,8 +684,15 @@
         "kind": "microcredential",
         "skills": ["GenAI", "Use Cases", "Foundations"],
         "tags": ["Online", "Non-credit", "Open to Public"],
+        "visions": ["The Pioneer (AI)", "The Ethicist (CS+Social Sciences)"],
+        "visionTags": ["The Pioneer", "The Ethicist"],
         "interests": ["Making computers learn", "Working with data & patterns"],
-        "foundations": ["Algebra & geometry", "Pre-Calculus / Trig", "Some coding / basic math", "New to coding"],
+        "foundations": [
+          "Foundational: Algebra & Geometry",
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "New to coding",
+          "Some coding background"
+        ],
         "preferences": ["Microcredential"],
         "availableToAll": true,
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/micro-credentials/genai-in-action-impact-and-possibilities.aspx"
@@ -757,8 +707,15 @@
         "kind": "microcredential",
         "skills": ["Prompting", "Tools", "Outputs"],
         "tags": ["Online", "Non-credit", "Open to Public"],
+        "visions": ["The Pioneer (AI)", "The Ethicist (CS+Social Sciences)"],
+        "visionTags": ["The Pioneer", "The Ethicist"],
         "interests": ["Making computers learn"],
-        "foundations": ["Algebra & geometry", "Pre-Calculus / Trig", "Some coding / basic math", "New to coding"],
+        "foundations": [
+          "Foundational: Algebra & Geometry",
+          "Intermediate: Pre-Calculus / Trigonometry",
+          "New to coding",
+          "Some coding background"
+        ],
         "preferences": ["Microcredential"],
         "availableToAll": true,
         "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/micro-credentials/ai-whisperer.aspx"
@@ -773,22 +730,12 @@
         "label": "Industry",
         "kind": "career",
         "infoSide": "left",
-        "goals": ["Job in industry"],
+        "goals": ["Industry"],
         "jobsDetailed": [
           {
             "title": "Computer Programmer",
             "description": "Writes, modifies, and tests computer code or scripts.",
             "salaryRange": "BLS May 2024 pay: 10th–90th percentile $52,190–$162,090"
-          },
-          {
-            "title": "Information Security Analyst",
-            "description": "Plans and carries out security measures to protect an organization's computer networks and systems.",
-            "salaryRange": "BLS May 2024 pay: 10th–90th percentile $69,660–$186,420"
-          },
-          {
-            "title": "Computer Systems Analyst",
-            "description": "Studies current computer systems and designs improvements to operate more efficiently.",
-            "salaryRange": "BLS May 2024 pay: 10th–90th percentile $63,160–$166,030"
           }
         ],
         "storyId": "alumni_industry"
@@ -799,10 +746,10 @@
       "id": "career_research",
       "type": "careerNode",
       "data": {
-        "label": "Research Lab",
+        "label": "Public Sector",
         "kind": "career",
         "infoSide": "left",
-        "goals": ["National labs", "Government"],
+        "goals": ["Public Sector"],
         "jobsDetailed": [
           {
             "title": "Computer and Information Research Scientist",
@@ -892,27 +839,7 @@
     { "id": "e-bsms-mscse", "source": "bs_ms", "target": "mscse" },
     { "id": "e-bsms-mscpe", "source": "bs_ms", "target": "mscpe" },
     { "id": "e-bsms-msai", "source": "bs_ms", "target": "msai" },
-    { "id": "e-bsms-mscy", "source": "bs_ms", "target": "mscy" },
-
-    { "id": "e-bscs-mscs", "source": "bscs", "target": "mscs" },
-    { "id": "e-bscp-mscpe", "source": "bscp", "target": "mscpe" },
-    { "id": "e-bsai-msai", "source": "bsai", "target": "msai" },
-    { "id": "e-bscys-mscy", "source": "bscys", "target": "mscy" },
-
-    { "id": "e-mscs-phd", "source": "mscs", "target": "phd_cse" },
-    { "id": "e-mscse-phd", "source": "mscse", "target": "phd_cse" },
-    { "id": "e-msai-phd", "source": "msai", "target": "phd_bda" },
-
-    { "id": "e-cert-ai-msai", "source": "cert_ai", "target": "msai" },
-    { "id": "e-cert-pathway-mscs", "source": "cert_pathway", "target": "mscs" },
-    { "id": "e-cert-everyday-msai", "source": "cert_ai_everyday", "target": "msai" },
-
-    { "id": "e-mscs-ind", "source": "mscs", "target": "career_industry" },
-    { "id": "e-msai-ind", "source": "msai", "target": "career_industry" },
-    { "id": "e-mscy-ind", "source": "mscy", "target": "career_industry" },
-    { "id": "e-phd-research", "source": "phd_cse", "target": "career_research" },
-    { "id": "e-phd-bda-research", "source": "phd_bda", "target": "career_research" },
-    { "id": "e-phd-academia", "source": "phd_cse", "target": "career_academia" }
+    { "id": "e-bsms-mscy", "source": "bs_ms", "target": "mscy" }
   ],
   "grads": [
     {
