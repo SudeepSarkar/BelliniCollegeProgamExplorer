@@ -709,6 +709,7 @@
         "label": "Pathway to Computing (Graduate Certificate)",
         "kind": "grad certificate",
         "skills": ["CS Foundations", "Preparation", "Bridge"],
+        "tags": ["For non-computing majors"],
         "interests": ["Building software & apps"],
         "foundations": ["Algebra & geometry", "Some coding / basic math", "New to coding"],
         "preferences": ["Certificate"],

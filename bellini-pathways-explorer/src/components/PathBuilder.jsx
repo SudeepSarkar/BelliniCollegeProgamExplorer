@@ -50,6 +50,15 @@ function ProgramCard({ program, selected, recommended, onSelect }) {
             {program.data.skills.slice(0, 4).join(" • ")}
           </div>
         )}
+        {program.data.tags?.length > 0 && (
+          <div className="mt-2 flex flex-wrap gap-2">
+            {program.data.tags.map((tag) => (
+              <span key={tag} className="tag">
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
       {program.data.url && (
         <a className="program-link" href={program.data.url} target="_blank" rel="noreferrer">
