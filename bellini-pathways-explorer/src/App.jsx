@@ -33,6 +33,7 @@ export default function App() {
   const [triage, setTriage] = useState({
     visions: [],
     statementSelections: [],
+    freeform: "",
     startingLine: "",
     mathLevel: "",
     codingExperience: "",

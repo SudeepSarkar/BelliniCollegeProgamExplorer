@@ -5,9 +5,8 @@ const visionOptions = [
     categoryId: "The Software Architect (CS, CSE)",
     categoryLabel: "Category A: The Software Architect (CS, CSE)",
     statements: [
-      "I want to build systems so robust they can handle a billion users at once.",
-      "I want to use advanced algorithms to solve global challenges like optimizing energy grids or mapping genomes.",
-      "I want to write the complex code behind seamless experiences like instant global communication or real-time digital worlds.",
+      "I want to architect systems that handle a billion users.",
+      "I want a high-demand job as a software developer with great benefits and job security.",
     ],
   },
   {
@@ -23,18 +22,16 @@ const visionOptions = [
     categoryId: "The Infrastructure Specialist (BSIT)",
     categoryLabel: "Category C: The Infrastructure Specialist (BSIT)",
     statements: [
-      "I want to build and manage the high-speed networks that power the daily operations of an entire smart city.",
-      "I want to control the massive cloud server environments that keep global platforms like Netflix or Google online.",
-      "I want to lead the elite technical team that detects and fixes massive system outages before they affect the public.",
+      "I want to control the massive cloud servers that power the internet.",
+      "I want to be the \"Go-To\" tech expert that every company needs to keep their business running.",
     ],
   },
   {
     categoryId: "The Cyber Guardian (BSCYS)",
     categoryLabel: "Category D: The Cyber Guardian (BSCYS)",
     statements: [
-      "I want to develop unhackable security protocols that keep the private data of millions of people safe from any threat.",
-      "I want to infiltrate systems as a \"friendly hacker\" to identify and patch vulnerabilities before criminals can find them.",
-      "I want to hunt down international cyber-syndicates by tracking digital fingerprints across the global web.",
+      "I want to hunt down international cyber-syndicates.",
+      "I want a secure government or corporate job protecting data, with a guaranteed clearanced salary.",
     ],
   },
   {
@@ -59,9 +56,17 @@ const visionOptions = [
     categoryId: "The Tech Business Leader (CS + Business)",
     categoryLabel: "Category G: The Tech Business Leader (CS + Business)",
     statements: [
-      "I want to launch my own tech startup and transform a single prototype into a billion-dollar global company.",
-      "I want to use data and algorithms to revolutionize how the world handles money and international banking.",
-      "I want to lead a legion of engineers to design and ship the tech products that will define the next decade.",
+      "I want to launch a billion-dollar startup.",
+      "I want to manage technology teams and projects without having to write code all day.",
+    ],
+  },
+  {
+    categoryId: "The Career Strategist (Any Major)",
+    categoryLabel: "The Career Strategist (Any Major)",
+    statements: [
+      "I want a stable, high-paying career right here in the Tampa Bay area.",
+      "I want a job with a clear 9-to-5 schedule so I can enjoy my life outside of work.",
+      "I want the fastest, most direct path to a salary of $70k+.",
     ],
   },
   {
@@ -204,6 +209,28 @@ export default function TriageOverlay({ triage, setTriage, onComplete }) {
               </button>
             );
           })}
+        </div>
+
+        <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-4">
+          <div className="text-sm font-semibold text-slate-700">The Magic Box</div>
+          <p className="mt-1 text-xs text-slate-500">
+            Don’t see your dream here? Tell us what you want in your own words.
+          </p>
+          <div className="mt-3">
+            <label className="text-xs uppercase tracking-[0.2em] text-slate-500">I want to…</label>
+            <textarea
+              rows={2}
+              className="mt-2 w-full rounded-2xl border border-slate-200 bg-white p-3 text-sm text-slate-700 focus:border-usf-green focus:outline-none"
+              placeholder="I want to make video games."
+              value={triage.freeform}
+              onChange={(event) =>
+                setTriage((prev) => ({
+                  ...prev,
+                  freeform: event.target.value,
+                }))
+              }
+            />
+          </div>
         </div>
 
         <div className="mt-8 rounded-3xl border border-slate-200 bg-white p-6">

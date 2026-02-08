@@ -61,6 +61,47 @@
       }
     },
     {
+      "id": "general_overview",
+      "type": "degreeNode",
+      "data": {
+        "label": "Bellini College Overview",
+        "kind": "overview",
+        "skills": [
+          "Academic pathways",
+          "Career planning",
+          "Advising support"
+        ],
+        "visionTags": [
+          "Custom Pathways",
+          "Advising Support",
+          "Bellini College"
+        ],
+        "tags": [
+          "Overview",
+          "Guided Planning"
+        ],
+        "url": "https://www.usf.edu/ai-cybersecurity-computing/academics/index.aspx",
+        "jobs": [
+          {
+            "title": "Tech Roles Across Bellini",
+            "description": "Roles across software, AI, cybersecurity, IT, and interdisciplinary pathways.",
+            "salary": "Salaries vary by program and role.",
+            "source": "Bellini College overview",
+            "sourceUrl": "https://www.usf.edu/ai-cybersecurity-computing/academics/index.aspx",
+            "goals": [
+              "Industry",
+              "Public Sector",
+              "Academia"
+            ]
+          }
+        ]
+      },
+      "position": {
+        "x": 200,
+        "y": 40
+      }
+    },
+    {
       "id": "bscs",
       "type": "degreeNode",
       "data": {
@@ -74,12 +115,14 @@
         "visions": [
           "The Software Architect (CS, CSE)",
           "The AI Pioneer (BSAI, MSAI)",
-          "The Cyber Guardian (BSCYS)"
+          "The Cyber Guardian (BSCYS)",
+          "The Career Strategist (Any Major)"
         ],
         "visionTags": [
           "The Software Architect",
           "The AI Pioneer",
-          "The Cyber Guardian"
+          "The Cyber Guardian",
+          "The Career Strategist"
         ],
         "interests": [
           "Building software & apps",
@@ -316,11 +359,13 @@
         ],
         "visions": [
           "The Cyber Guardian (BSCYS)",
-          "The Digital Investigator (CS + Criminology)"
+          "The Digital Investigator (CS + Criminology)",
+          "The Career Strategist (Any Major)"
         ],
         "visionTags": [
           "The Cyber Guardian",
-          "The Digital Investigator"
+          "The Digital Investigator",
+          "The Career Strategist"
         ],
         "interests": [
           "Protecting systems & data"
@@ -366,11 +411,13 @@
         ],
         "visions": [
           "The Infrastructure Specialist (BSIT)",
-          "The Cyber Guardian (BSCYS)"
+          "The Cyber Guardian (BSCYS)",
+          "The Career Strategist (Any Major)"
         ],
         "visionTags": [
           "The Infrastructure Specialist",
-          "The Cyber Guardian"
+          "The Cyber Guardian",
+          "The Career Strategist"
         ],
         "interests": [
           "Building software & apps",
@@ -418,11 +465,13 @@
         ],
         "visions": [
           "The Tech Business Leader (CS + Business)",
-          "The Software Architect (CS, CSE)"
+          "The Software Architect (CS, CSE)",
+          "The Career Strategist (Any Major)"
         ],
         "visionTags": [
           "The Tech Business Leader",
-          "The Software Architect"
+          "The Software Architect",
+          "The Career Strategist"
         ],
         "interests": [
           "Tech + society/business"
@@ -1091,11 +1140,13 @@
         ],
         "visions": [
           "The Software Architect (CS, CSE)",
-          "The Infrastructure Specialist (BSIT)"
+          "The Infrastructure Specialist (BSIT)",
+          "The Career Strategist (Any Major)"
         ],
         "visionTags": [
           "The Software Architect",
-          "The Infrastructure Specialist"
+          "The Infrastructure Specialist",
+          "The Career Strategist"
         ],
         "tags": [
           "For non-computing majors"

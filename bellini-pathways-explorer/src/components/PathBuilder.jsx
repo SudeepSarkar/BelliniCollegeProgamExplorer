@@ -1,5 +1,70 @@
 import { useMemo, useState, useEffect } from "react";
 
+function normalizeText(text) {
+  return (text || "").toLowerCase().trim();
+}
+
+function getFreeformMatches(text) {
+  const normalized = normalizeText(text);
+  const programIds = new Set();
+  const visionIds = new Set();
+
+  if (!normalized) return { programIds, visionIds };
+
+  if (normalized.includes("video game") || normalized.includes("video games") || normalized.includes("game")) {
+    programIds.add("bscs");
+    visionIds.add("The Software Architect (CS, CSE)");
+  }
+  if (
+    normalized.includes("bank") ||
+    normalized.includes("finance") ||
+    normalized.includes("fintech")
+  ) {
+    programIds.add("bscs_business");
+    programIds.add("bsit");
+    visionIds.add("The Tech Business Leader (CS + Business)");
+  }
+  if (
+    normalized.includes("fix computer") ||
+    normalized.includes("fix computers") ||
+    normalized.includes("repair") ||
+    normalized.includes("help desk") ||
+    normalized.includes("tech support")
+  ) {
+    programIds.add("bsit");
+    programIds.add("bscp");
+    visionIds.add("The Infrastructure Specialist (BSIT)");
+    visionIds.add("The Systems Engineer (CpE, CSE)");
+  }
+  if (
+    normalized.includes("hardware") ||
+    normalized.includes("circuit") ||
+    normalized.includes("device")
+  ) {
+    programIds.add("bscp");
+    visionIds.add("The Systems Engineer (CpE, CSE)");
+  }
+  if (
+    normalized.includes("security") ||
+    normalized.includes("cyber") ||
+    normalized.includes("hacker")
+  ) {
+    programIds.add("bscys");
+    visionIds.add("The Cyber Guardian (BSCYS)");
+  }
+  if (
+    normalized.includes("ai") ||
+    normalized.includes("artificial intelligence") ||
+    normalized.includes("machine learning") ||
+    normalized.includes("ml")
+  ) {
+    programIds.add("bsai");
+    visionIds.add("The AI Pioneer (BSAI, MSAI)");
+  }
+
+  return { programIds, visionIds };
+}
+
 function matchesReadiness(node, mathLevel, codingExperience) {
   if (!mathLevel && !codingExperience) return true;
   if (!node.data?.foundations) return true;
@@ -136,6 +201,8 @@ function GradCard({ grad }) {
 
 export default function PathBuilder({ data, triage, active }) {
   const [selectedProgramId, setSelectedProgramId] = useState(null);
+  const [showAdvisorCTA, setShowAdvisorCTA] = useState(false);
+  const freeformMatches = useMemo(() => getFreeformMatches(triage.freeform), [triage.freeform]);
   const matchingPrograms = useMemo(() => {
     if (!active) return [];
     const programs = data.nodes.filter((node) => {
@@ -145,7 +212,12 @@ export default function PathBuilder({ data, triage, active }) {
         triage.visions?.length > 0
           ? triage.visions.some((vision) => node.data?.visions?.includes(vision))
           : true;
-      if (!matchesVision) return false;
+      const matchesFreeformProgram = freeformMatches.programIds.has(node.id);
+      const matchesFreeformVision =
+        freeformMatches.visionIds.size > 0
+          ? node.data?.visions?.some((vision) => freeformMatches.visionIds.has(vision))
+          : false;
+      if (!matchesVision && !matchesFreeformProgram && !matchesFreeformVision) return false;
 
       if (!matchesReadiness(node, triage.mathLevel, triage.codingExperience)) return false;
 
@@ -170,21 +242,45 @@ export default function PathBuilder({ data, triage, active }) {
     triage.credentialType,
     triage.microPath,
     triage.degreeLevel,
+    freeformMatches,
   ]);
+
+  const fallbackProgram = useMemo(
+    () => data.nodes.find((node) => node.id === "general_overview") || null,
+    [data.nodes]
+  );
+  const displayedPrograms =
+    matchingPrograms.length > 0 ? matchingPrograms : fallbackProgram ? [fallbackProgram] : [];
+
+  useEffect(() => {
+    if (!active) {
+      setShowAdvisorCTA(false);
+      return;
+    }
+    if (matchingPrograms.length === 0) {
+      setShowAdvisorCTA(true);
+    } else {
+      setShowAdvisorCTA(false);
+    }
+  }, [active, matchingPrograms.length]);
 
   useEffect(() => {
     if (matchingPrograms.length === 0) {
-      setSelectedProgramId(null);
+      if (fallbackProgram) {
+        setSelectedProgramId(fallbackProgram.id);
+      } else {
+        setSelectedProgramId(null);
+      }
       return;
     }
     if (!selectedProgramId || !matchingPrograms.find((p) => p.id === selectedProgramId)) {
       setSelectedProgramId(matchingPrograms[0].id);
     }
-  }, [matchingPrograms, selectedProgramId]);
+  }, [matchingPrograms, selectedProgramId, fallbackProgram]);
 
   const selectedProgram = useMemo(
-    () => matchingPrograms.find((program) => program.id === selectedProgramId) || null,
-    [matchingPrograms, selectedProgramId]
+    () => displayedPrograms.find((program) => program.id === selectedProgramId) || null,
+    [displayedPrograms, selectedProgramId]
   );
 
   const jobBlocks = useMemo(() => {
@@ -228,10 +324,12 @@ export default function PathBuilder({ data, triage, active }) {
         <div className="rounded-3xl bg-white p-6 shadow-card">
           <div className="text-xs uppercase tracking-[0.3em] text-slate-500">Matched Programs</div>
           <div className="mt-4 grid gap-3 md:grid-cols-2">
-            {matchingPrograms.length === 0 && (
-              <div className="text-sm text-slate-500">No programs match these triage choices yet.</div>
+            {matchingPrograms.length === 0 && fallbackProgram && (
+              <div className="text-sm text-slate-500">
+                We’re building a custom path for your unique goals. Here’s a general Bellini overview to get you started.
+              </div>
             )}
-            {matchingPrograms.map((program) => (
+            {displayedPrograms.map((program) => (
               <ProgramCard
                 key={program.id}
                 program={program}
@@ -241,7 +339,9 @@ export default function PathBuilder({ data, triage, active }) {
                     ? triage.visions.some((vision) => program.data?.visions?.includes(vision))
                     : false) ||
                   (triage.startingLine === "Transfer Student" && program.id === "cert_pathway") ||
-                  matchesReadiness(program, triage.mathLevel, triage.codingExperience)
+                  matchesReadiness(program, triage.mathLevel, triage.codingExperience) ||
+                  freeformMatches.programIds.has(program.id) ||
+                  program.data?.visions?.some((vision) => freeformMatches.visionIds.has(vision))
                 }
                 onSelect={() => setSelectedProgramId(program.id)}
               />
@@ -275,6 +375,43 @@ export default function PathBuilder({ data, triage, active }) {
           </div>
         </div>
       </div>
+
+      {showAdvisorCTA && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4">
+          <div className="w-full max-w-lg rounded-3xl bg-white p-6 shadow-card">
+            <div className="text-xs uppercase tracking-[0.3em] text-usf-green">Let’s Build Your Path</div>
+            <h3 className="mt-3 text-2xl font-display text-usf-ink">Your goals are unique—and that’s a good thing.</h3>
+            <p className="mt-2 text-sm text-slate-600">
+              While there isn’t a standard path for this exact combination, we build custom pathways for students like you every day.
+              Let’s map your personal roadmap together.
+            </p>
+            <div className="mt-5 flex flex-col gap-3">
+              <a
+                className="inline-flex items-center justify-center rounded-full bg-usf-green px-5 py-3 text-white font-semibold"
+                href="https://www.usf.edu/ai-cybersecurity-computing/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Chat with a Bellini Peer Advisor
+              </a>
+              <a
+                className="inline-flex items-center justify-center rounded-full border border-usf-green px-5 py-3 text-usf-green font-semibold"
+                href="https://www.usf.edu/ai-cybersecurity-computing/academics/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Schedule a 15-min Career Strategy Session
+              </a>
+              <button
+                className="text-sm text-slate-500 hover:text-slate-700"
+                onClick={() => setShowAdvisorCTA(false)}
+              >
+                Continue exploring
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
