@@ -1,0 +1,299 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background: radial-gradient(circle at top left, #ffffff 0%, #f4f7f6 45%, #eef4f1 100%);
+  min-height: 100vh;
+}
+
+.react-flow__node {
+  font-family: "Work Sans", sans-serif;
+}
+
+.node-shell {
+  border-radius: 18px;
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  padding: 14px 16px;
+  width: 210px;
+  min-height: 108px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+  position: relative;
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.node-shell:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.12);
+}
+
+.node-shell.interdisciplinary {
+  border: 2px solid transparent;
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(120deg, #006747, #cfc096) border-box;
+}
+
+.node-shell.bridge {
+  background: linear-gradient(135deg, #eaf5f1 0%, #ffffff 60%);
+}
+
+.node-shell.career {
+  background: linear-gradient(135deg, #fef8e7 0%, #ffffff 70%);
+}
+
+.node-title {
+  font-family: "Fraunces", serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.path-card {
+  width: 100%;
+  min-height: 130px;
+  border-radius: 18px;
+  border: 1px solid #e2e8f0;
+  padding: 14px 16px;
+  background: #ffffff;
+  text-align: left;
+  transition: border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
+}
+
+.path-card:hover {
+  transform: translateY(-1px);
+  border-color: #006747;
+  box-shadow: 0 12px 20px rgba(15, 23, 42, 0.12);
+}
+
+.path-card-selected {
+  border-color: #006747;
+  box-shadow: 0 16px 26px rgba(0, 103, 71, 0.18);
+}
+
+.path-card-title {
+  font-family: "Fraunces", serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+  line-height: 1.25;
+}
+
+.path-card-meta {
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748b;
+}
+
+.path-card-pill {
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: #eef4f1;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.path-card-pill.pill-accent {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.program-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 16px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 150px;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
+  text-align: left;
+  transition: border-color 200ms ease, box-shadow 200ms ease, transform 200ms ease;
+  cursor: pointer;
+}
+
+.program-card:hover {
+  border-color: #006747;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 20px rgba(15, 23, 42, 0.12);
+}
+
+.program-card-selected {
+  border-color: #006747;
+  box-shadow: 0 16px 26px rgba(0, 103, 71, 0.18);
+}
+
+.program-title {
+  font-family: "Fraunces", serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.program-meta {
+  margin-top: 4px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748b;
+}
+
+.program-recommend {
+  margin-top: 6px;
+  display: inline-flex;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: #1f2937;
+  background: #fef3c7;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.program-link {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #006747;
+}
+
+.info-block {
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  padding: 12px;
+  background: #f9fafb;
+}
+
+.info-title {
+  font-weight: 600;
+  color: #0f172a;
+  font-size: 14px;
+}
+
+.info-subtitle {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.info-body {
+  font-size: 12px;
+  color: #475569;
+  margin-top: 6px;
+}
+
+.info-salary {
+  font-size: 12px;
+  font-weight: 600;
+  color: #006747;
+  margin-top: 8px;
+}
+
+.node-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: #006747;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 999px;
+}
+
+.node-subtle {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.node-pill {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: #eef4f1;
+  color: #0f172a;
+  padding: 2px 6px;
+  border-radius: 999px;
+}
+
+.node-pill-accent {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.info-card {
+  position: absolute;
+  z-index: 60;
+  top: -10px;
+  left: 210px;
+  width: 240px;
+  max-width: 70vw;
+  background: white;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 18px 30px rgba(15, 23, 42, 0.2);
+  border: 1px solid #e2e8f0;
+}
+
+.info-card-left {
+  left: auto;
+  right: 210px;
+}
+
+.react-flow {
+  z-index: 20;
+  overflow: visible;
+}
+
+.info-card h4 {
+  font-family: "Fraunces", serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #eef4f1;
+  color: #0f172a;
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+  .info-card {
+    position: static;
+    margin-top: 10px;
+    width: 100%;
+    left: 0;
+  }
+}
