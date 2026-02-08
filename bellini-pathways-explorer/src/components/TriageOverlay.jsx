@@ -162,7 +162,7 @@ export default function TriageOverlay({ triage, setTriage, onComplete }) {
         <div className="mt-6 space-y-6">
           {visionOptions.map((category) => (
             <div key={category.categoryId}>
-              <div className="text-sm font-semibold text-slate-700">{category.categoryLabel}</div>
+              <div className="text-sm font-semibold text-slate-700">Choose what resonates</div>
               <div className="mt-3 grid gap-3 md:grid-cols-2">
                 {category.statements.map((statement) => {
                   const active = triage.statementSelections.includes(statement);

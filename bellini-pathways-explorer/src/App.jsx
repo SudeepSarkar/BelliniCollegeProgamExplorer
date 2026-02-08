@@ -62,7 +62,7 @@ export default function App() {
             Pathways Explorer (under construction)
           </h1>
           <p className="mt-3 text-base md:text-lg text-slate-600 max-w-3xl">
-            Map your background to programs and careers. Explore left-to-right pathways and spotlight the opportunities that fit your goals.
+            Dream it. Map it. Make it real. (Click on blocks on clicks to reveal more information.)
           </p>
         </div>
       </header>
